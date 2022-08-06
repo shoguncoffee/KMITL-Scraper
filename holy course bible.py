@@ -239,7 +239,7 @@ if __name__ == '__main__':
                             except StopIteration: 
                                 count += 1
                                 if count > 5: break
+                            except requests.exceptions.ConnectTimeout:
+                                continue
                                                             
-                        
         if save_csv: file.close()
-        
