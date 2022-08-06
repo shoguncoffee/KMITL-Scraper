@@ -198,13 +198,14 @@ if __name__ == '__main__':
                     sec = subject['section']
                     is_lap = check_overlap(rawdata['data'], n)
                     
-                    if is_lap: 
-                        print(
-                            f'__{eng_name}__ ({sec}) overlap schedule'
-                            )
-                    elif isinstance(count, str) and 'Full' in count:
+                    
+                    if isinstance(count, str) and 'Full' in count:
                         print(
                             f'__{eng_name}__ ({sec}) Full'
+                            )
+                    elif is_lap: 
+                        print(
+                            f'__{eng_name}__ ({sec}) overlap schedule'
                             )
                     else:
                         print(
