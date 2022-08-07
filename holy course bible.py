@@ -48,9 +48,9 @@ class csv_handle: # for overwrite method
     def format(self, data):    
         k = [data[q] for q in self.field[:4]]
         k.extend([
-            ('ปฏิบัติ', 'ทฤษฎี')[data['lect_or_prac'] == 'ท'],
-            (data['LIMIT'], 'no limit')[data['LIMIT'] == 0],
-            (data['COUNT'], 'Full')['Full' in data['COUNT']],
+            'ทฤษฎี' if data['lect_or_prac'] == 'ท' else 'ปฏิบัติ',
+            'no limit' if data['LIMIT'] == 0 else data['LIMIT'],
+            'Full' if 'Full' in data['COUNT'] else data['COUNT'],
             ])
         k.append(self.teach_time_format(data))
         k.append(self.exam_time_format(data)) 
