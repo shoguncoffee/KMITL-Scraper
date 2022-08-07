@@ -1,4 +1,5 @@
 import requests, json, csv
+import urllib3, http
 from time import *
 
 
@@ -64,6 +65,13 @@ class subjects_detection:
         ('not still registered subject (Prerequisite)', 'require precourse'),
         ('Not found Data', 'No data'),
         ]
+    
+    exception = (
+        requests.exceptions.ConnectTimeout,
+        requests.exceptions.ConnectionError,
+        urllib3.exceptions.ProtocolError,
+        http.client.RemoteDisconnected,
+        )
     
     common_header = {
         'Accept-Language': 'en-us',
@@ -197,9 +205,7 @@ class subjects_detection:
                 sec = subject['section']
                 
                 is_lap = self.check_overlap(rawdata['data'], n)
-                log(
-                    f'{id}: __ {eng_name} __({sec})', 
-                    end= ' ')
+                log(f'{id}: __ {eng_name} __({sec})', end= ' ')
                 if isinstance(count, str) and 'Full' in count:
                     print(
                         f'Full! [{limit}]'
@@ -225,62 +231,63 @@ class subjects_detection:
                     break
             else: print(f'unknow error => {Err}')
     
-    def run(self):  
-        if self.csv: 
-            file = open('data_table.csv', 'w')
-            self.writer = csv.writer(file).writerow
-            self.writer(self.csv.field)
-                
-        loginjson = json.dumps({
-            'function': 'login-jwt',
-            'email': f'{self.student_id}@kmitl.ac.th',
-            'password': self.password
-            })
-        token_res = requests.post(
-            'https://k8s.reg.kmitl.ac.th/api/user/', 
-            data=loginjson,
-            headers=self.common_header | {
-                'Content-Length': str(loginjson.__len__()),
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json;charset=utf-8',
-                }
-            )
-        token = json.loads(token_res.text)['token']
-            
-        with requests.Session() as session:
-            session.headers.update(
-                self.common_header | {
-                'Authorization': f"Bearer {token}",
-                'Accept': '*/*',
-                })   
-            my_registered = session.get(
-                'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-regis-result&'
-                f'student_id={self.student_id}&year={self.year}&semester={self.semester}&level_id={self.level}')
-            self.registered_data = json.loads(my_registered.text)
-            self.occ = self.occupy_time(self.registered_data)    
-            
-            strange = self.strange     
-            for D1, D2, D3 in self.lookup_id:
-                for d1 in strange(D1):
-                    for d2 in strange(D2):
-                        for d3 in strange(D3):
-                            for order in strange('001-999'): 
-                                subject_id = d1+d2+d3+order
-                                while 1:
-                                    try: self.main(subject_id, session)
-                                    except (
-                                        requests.exceptions.ConnectTimeout,
-                                        ): log()
-                                    except KeyError as e: 
-                                        print(
-                                            f'{subject_id} {e}',
-                                            end='\n\n'
-                                            )
-                                        break
-                                    else: break
-                                    finally: sleep(0.5)
-                                                                
-        if self.csv: file.close()
+    def run(self):
+        try:
+            if self.csv: 
+                file = open('data_table.csv', 'w')
+                self.writer = csv.writer(file).writerow
+                self.writer(self.csv.field)
+
+            loginjson = json.dumps({
+                'function': 'login-jwt',
+                'email': f'{self.student_id}@kmitl.ac.th',
+                'password': self.password
+                })
+            token_res = requests.post(
+                'https://k8s.reg.kmitl.ac.th/api/user/', 
+                data=loginjson,
+                headers=self.common_header | {
+                    'Content-Length': str(loginjson.__len__()),
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json;charset=utf-8',
+                    }
+                )
+            token = json.loads(token_res.text)['token']
+
+            with requests.Session() as session:
+                session.headers.update(
+                    self.common_header | {
+                    'Authorization': f"Bearer {token}",
+                    'Accept': '*/*',
+                    })   
+                my_registered = session.get(
+                    'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-regis-result&'
+                    f'student_id={self.student_id}&year={self.year}&semester={self.semester}&level_id={self.level}')
+                self.registered_data = json.loads(my_registered.text)
+                self.occ = self.occupy_time(self.registered_data)    
+
+                strange = self.strange     
+                for D1, D2, D3 in self.lookup_id:
+                    for d1 in strange(D1):
+                        for d2 in strange(D2):
+                            for d3 in strange(D3):
+                                for order in strange('001-999'): 
+                                    subject_id = d1+d2+d3+order
+                                    while 1:
+                                        try: self.main(subject_id, session)
+                                        except self.exception as e: 
+                                            log(f'Connection Error: {e}')
+                                        except KeyError as E: 
+                                            if E == 'token':
+                                                log('student-id or password not correct')
+                                                quit()
+                                            else:
+                                                log(f'{subject_id} KeyError: {E}')
+                                                break
+                                        else: break
+                                        finally: sleep(0.5)
+        finally:
+            if self.csv: file.close()
 
 
 if __name__ == '__main__':
