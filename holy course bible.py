@@ -74,11 +74,11 @@ def csvfomat1(data):
     
     date = f"{day[int(data['teach_day'])]} {data['teach_time'][:5]}-{data['teach_time2'][:5]}"
     if 'x' in data['teachtime_str']:
-        day, teach_time = data['teachtime_str'].split('x')
-        if day == data['teach_day']:
+        thisday, teach_time = data['teachtime_str'].split('x')
+        if thisday == data['teach_day']:
             date += f", {teach_time}"
         else:
-            date += f", {day[int(day)]} {teach_time}"
+            date += f", {day[int(thisday)]} {teach_time}"
     k.append(date)
     
     for s in 'mexam', 'exam':
