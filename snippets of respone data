@@ -1,0 +1,125 @@
+json http respones content
+# 9064216
+{
+    'data': [
+        {
+            'teach_table_id': '92626',
+            'section': '901',
+            'teach_day': '3',
+            'teach_time': '13:00:00',
+            'teach_time2': '16:00:00',
+            'teachtime_str': '',
+            'mexam_date': '0000-00-00',
+            'mexam_time': '00:00:00',
+            'mexam_time2': '00:00:00',
+            'exam_date': '0000-00-00',
+            'exam_time': '00:00:00',
+            'exam_time2': '00:00:00',
+            'lect_or_prac': 'ท',
+            'sec_pair': None,
+            'limit': '80',
+            'time_slot': [{
+                    'START_DATE_TIME': '2022-08-02 13:00:00',
+                    'END_DATE_TIME': '2022-08-02 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-08-09 13:00:00',
+                    'END_DATE_TIME': '2022-08-09 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-08-16 13:00:00',
+                    'END_DATE_TIME': '2022-08-16 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-08-23 13:00:00',
+                    'END_DATE_TIME': '2022-08-23 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-08-30 13:00:00',
+                    'END_DATE_TIME': '2022-08-30 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-09-06 13:00:00',
+                    'END_DATE_TIME': '2022-09-06 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-09-13 13:00:00',
+                    'END_DATE_TIME': '2022-09-13 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-09-20 13:00:00',
+                    'END_DATE_TIME': '2022-09-20 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-10-04 13:00:00',
+                    'END_DATE_TIME': '2022-10-04 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-10-11 13:00:00',
+                    'END_DATE_TIME': '2022-10-11 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-10-18 13:00:00',
+                    'END_DATE_TIME': '2022-10-18 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-10-25 13:00:00',
+                    'END_DATE_TIME': '2022-10-25 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-11-01 13:00:00',
+                    'END_DATE_TIME': '2022-11-01 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-11-08 13:00:00',
+                    'END_DATE_TIME': '2022-11-08 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-11-15 13:00:00',
+                    'END_DATE_TIME': '2022-11-15 16:00:00'
+                },
+                {
+                    'START_DATE_TIME': '2022-11-22 13:00:00',
+                    'END_DATE_TIME': '2022-11-22 16:00:00'
+                }
+            ],
+            'subject_id': '90642163',
+            'subject_tname': 'โดดเด่นด้วยจุดแข็ง',
+            'subject_ename': 'STAND OUT WITH STRENGTHS',
+            'credit': '3',
+            'lect_hr': '3',
+            'prac_hr': '0',
+            'self_hr': '6',
+            'LIMIT': 80,
+            'COUNT': 'เต็ม/Full',
+            'skip_date_time': False
+        }
+    ],
+    'error': None,
+    'subject_id_grade_not_announce': None,
+    'skip_date_time': False
+}
+
+
+# 90642164
+{
+    'data': [],
+    'error': {
+        'message_th': 'ไม่สามารถลงวิชานี้ได้ เนื่องจากไม่พบรายวิชาในตารางเรียนตารางสอน',
+        'message_en': 'Can not register this subject because the course is not in the course schedule.'
+    },
+    'subject_id_grade_not_announce': None,
+    'skip_date_time': False
+}
+
+
+# 90642173
+{
+    'data': [],
+    'error': {
+        'message_th': 'Not found Data in table.',
+        'message_en': 'Not found Data in table.'
+    },
+    'subject_id_grade_not_announce': [],
+    'skip_date_time': False
+}
