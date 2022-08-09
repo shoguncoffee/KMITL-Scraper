@@ -244,14 +244,18 @@ class subjects_detection:
                 'password': self.password
                 })
             
-            with requests.post('https://k8s.reg.kmitl.ac.th/api/user/', data=loginjson,
-                    headers=self.common_header | {
-                        'Content-Length': str(loginjson.__len__()),
-                        'Accept': 'application/json, text/plain, */*',
-                        'Content-Type': 'application/json;charset=utf-8',
-                        }) as token_res:
+            with requests.post('https://k8s.reg.kmitl.ac.th/api/user/', data=loginjson, headers=self.common_header | {
+                    'Content-Length': str(loginjson.__len__()),
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json;charset=utf-8'}) as token_res:
                 
-                token = json.loads(token_res.text)['token']
+                q = False
+                try:
+                    token = json.loads(token_res.text)['token']
+                except: 
+                    log('student-id or password not correct')
+                    q = True
+                if q: quit()
 
             with requests.Session() as session:
                 session.headers.update(
@@ -273,18 +277,11 @@ class subjects_detection:
                                 for order in strange('001-999'): 
                                     subject_id = d1+d2+d3+order
                                     while 1:
-                                        try: self.main(subject_id, session)
+                                        try: 
+                                            self.main(subject_id, session)
                                         except self.exception as e: 
                                             log(f'Connection Error: {e}')
-                                        except KeyError as E: 
-                                            if E == 'token':
-                                                log('student-id or password not correct')
-                                                quit()
-                                            else:
-                                                log(f'{subject_id} KeyError: {E}')
-                                                break
                                         else: break
-                                        finally: sleep(0.5)
         finally:
             if self.csv: file.close()
 
