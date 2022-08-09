@@ -62,7 +62,7 @@ class subjects_detection:
     errorlist = [
         ('not in the course schedule', 'Not open yet'),
         ('not pass rule in the course', 'Not pass rule'),
-        ('not still registered subject (Prerequisite)', 'require precourse'),
+        ('not still registered subject (Prerequisite)', 'Require precourse'),
         ('Not found Data', 'No data'),
         ]
     
@@ -190,12 +190,12 @@ class subjects_detection:
                     print(f"can't find sec: {pack_sec} in subject: {this_id}")
     
     def main(self, id, session):
-        res = session.get(
-            'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-can-register-by-student-id-and-subject-id'
+        url = 'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-can-register-by-student-id-and-subject-id'\
             f'&subject_id={id}&student_id={self.student_id}&year={self.year}&semester={self.semester}'
-            )
-        rawdata = json.loads(res.text)
-        error = rawdata['error']
+        
+        with session.get(url) as res:
+            rawdata = json.loads(res.text)
+            error = rawdata['error']
         
         if error is None:
             for n, subject in enumerate(rawdata['data']):
@@ -243,16 +243,15 @@ class subjects_detection:
                 'email': f'{self.student_id}@kmitl.ac.th',
                 'password': self.password
                 })
-            token_res = requests.post(
-                'https://k8s.reg.kmitl.ac.th/api/user/', 
-                data=loginjson,
-                headers=self.common_header | {
-                    'Content-Length': str(loginjson.__len__()),
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-Type': 'application/json;charset=utf-8',
-                    }
-                )
-            token = json.loads(token_res.text)['token']
+            
+            with requests.post('https://k8s.reg.kmitl.ac.th/api/user/', data=loginjson,
+                    headers=self.common_header | {
+                        'Content-Length': str(loginjson.__len__()),
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json;charset=utf-8',
+                        }) as token_res:
+                
+                token = json.loads(token_res.text)['token']
 
             with requests.Session() as session:
                 session.headers.update(
