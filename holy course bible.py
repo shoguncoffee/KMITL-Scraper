@@ -1,24 +1,52 @@
-import requests, json, csv
-import urllib3, http
-from time import *
+import json, csv, os
+import urllib3, http, requests
+#import asyncio, aiohttp
+from time import strftime, sleep
 
 
-def log(*s, t=None, end='\n', sep=' '):
-    a = ''
-    if t is None: t = strftime("%X")
-    elif t == False:
+def log(*s, t=None, multiline=False, end='\n', sep=' '):
+    dash = ' '*13 + '-'
+    if t is None: 
+        t = strftime("%X")
+        a = ''
+    elif t is False:
         t = ''
-        a = ' '*4 +'-'
-    print('%-9s'%t, a, *s, end=end, sep=sep)
+        a = dash
+        
+    if multiline: 
+        s = [('\n'+dash).join(str(q) for q in s)]
+        
+    print('%-6s'%t, a, *s, end=end, sep=sep)
 
 
-class csv_handle: # for overwrite method
-    field = ['subject id', 'section', 'sec pair', 'credit', 'type', 'limit', 'count', 'time', 'mid exam', 'late exam']
-    day = [None, 'อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์']
+class csv_handle: # for overwrite method (unready)
+    field = [
+        'subject id', 
+        'section', 
+        'sec pair', 
+        'credit', 
+        'type', 
+        'limit', 
+        'count', 
+        'time', 
+        'mid exam', 
+        'late exam'
+        ]
+    day = [
+        None, 
+        'อาทิตย์', 
+        'จันทร์', 
+        'อังคาร', 
+        'พุธ', 
+        'พฤหัสบดี', 
+        'ศุกร์', 
+        'เสาร์'
+        ]
     
-    @staticmethod
-    def teach_time_format(data):
-        day = self.day[int(data['teach_day'])]
+    def teach_time_format(self, data):
+        day_index = int(data['teach_day'])
+        day = self.day[day_index]
+        
         start_time = data['teach_time'][:5]
         end_time = data['teach_time2'][:5]     
         other_time = data['teachtime_str']
@@ -26,14 +54,16 @@ class csv_handle: # for overwrite method
         date = f"{day} {start_time}-{end_time}"
         
         if 'x' in other_time:
-            thisday, teach_time = other_time.split('x')
-            if thisday == day:
-                return f"{date}, {teach_time}"
+            thatday, teach_time = other_time.split('x')
+            if thatday == day:
+                return f"{date} {teach_time}"
             else:
-                other_day = day[int(thisday)]
-                return f"{date}, {other_day} {teach_time}" 
+                other_day = day[int(thatday)]
+                return f"{date}, {other_day} {teach_time}"
+        else: 
+            return date
              
-    @staticmethod          
+    @staticmethod
     def exam_time_format(data):
         for s in 'mexam', 'exam':
             date = data[s+'_date']
@@ -45,7 +75,7 @@ class csv_handle: # for overwrite method
             else: 
                 return f"{date} {start}-{end}"
     
-    def format(self, data):    
+    def format(self, data): 
         k = [data[q] for q in self.field[:4]]
         k.extend([
             'ทฤษฎี' if data['lect_or_prac'] == 'ท' else 'ปฏิบัติ',
@@ -60,10 +90,10 @@ class csv_handle: # for overwrite method
 
 class subjects_detection:    
     errorlist = [
-        ('not in the course schedule', 'Not open yet'),
-        ('not pass rule in the course', 'Not pass rule'),
-        ('not still registered subject (Prerequisite)', 'Require precourse'),
-        ('Not found Data', 'No data'),
+        ('not in the course schedule', 'Close'),
+        ('not pass rule in the course', 'Not qualified'),
+        ('not still registered subject (Prerequisite)', 'Require prerequisite'),
+        ('Not found Data', 'N/A'),
         ]
     
     exception = (
@@ -105,13 +135,8 @@ class subjects_detection:
             level = 1,
             csv = csv_handle # False = Not export to csv
         ):
-        self.student_id = student_id
-        self.password = password
-        self.year = year
-        self.semester = semester
-        self.lookup_id = lookup_id
-        self.level = level
-        self.csv = csv
+        for k, v in locals().items():
+            if k != 'self': setattr(self, k, v)
         
     
     @staticmethod
@@ -127,10 +152,9 @@ class subjects_detection:
     
     @staticmethod
     def time_period(t):
-        tl = '12:00', '16:00'
+        tl = '12:00', '16:00', '20:00'
         for n, time in enumerate(tl):
             if t < time: return n
-        return 2
         # 0 -> beforenoon, 1 -> afternoon, 2 -> evening
    
     def occupy_time(self, registered):
@@ -149,8 +173,8 @@ class subjects_detection:
                     period = time_period(start_time)
                     k[s][(date, period)] = id, sec
             
-            day = subject['teach_day']
             start_time = subject['teach_time'][:5]
+            day = subject['teach_day']
             period = time_period(start_time)
             k['teach'][(day, period)] = id, sec
             
@@ -165,98 +189,106 @@ class subjects_detection:
                 date = subject[s+'_date']
                 period = time_period(subject[s+'_time'])
                 l = date, period
-                if l in occ[s]:
-                    return occ[s][l]
+                exist = occ[s].pop(l, None)
+                if exist: return exist
             
             day = subject['teach_day']
             period = time_period(subject['teach_time'])
             l = day, period
-            if l in occ['teach']:
-                return occ['teach'][l]
+            return occ['teach'].pop(l, None)
         
         this_subject = datalist[seq]
         this_id = this_subject['subject_id']
+        pack_sec = this_subject['sec_pair']
         check1 = sub(this_subject)
+        
         if check1: return check1
-        else:
-            pack_sec = this_subject['sec_pair']
-            if pack_sec is not None:
-                for subject in datalist:
-                    if subject['section'] == pack_sec:
-                        check2 = sub(subject)
-                        if check2: return check2
-                        break
-                else:
-                    print(f"can't find sec: {pack_sec} in subject: {this_id}")
-    
-    def main(self, id, session):
-        url = 'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-can-register-by-student-id-and-subject-id'\
+        elif pack_sec is not None:
+            for subject in datalist:
+                if subject['section'] == pack_sec:
+                    check2 = sub(subject)
+                    if check2: return check2
+                    break
+            else:
+                log(
+                    f"can't find sec {pack_sec} in {this_id} (original_sec: {this_subject['section']})"
+                    )
+
+    def main(self, id, session):        
+        res = session.get(
+            'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-can-register-by-student-id-and-subject-id'\
             f'&subject_id={id}&student_id={self.student_id}&year={self.year}&semester={self.semester}'
+            ).text
+        rawdata = json.loads(res)
+        try: error = rawdata['error']
+        except KeyError:
+            log(f'{id}: Respone format Error', rawdata, sep='\n', end='\n\n')
+            raise StopIteration
+            
         
-        with session.get(url) as res:
-            rawdata = json.loads(res.text)
-            error = rawdata['error']
-        
-        if error is None:
+        if error is not None:
+            Err = error['message_en']                                     
+            for part, reply in self.errorlist:
+                if part in Err: 
+                    log(f'{id}: {reply}')
+                    break
+            else: 
+                log(f'{id}: unknow error => {Err}')
+            
+        else:
+            loglist = []
             for n, subject in enumerate(rawdata['data']):
                 eng_name = subject["subject_ename"]
+                thai_name = subject["subject_tname"]
                 count = subject['COUNT']
-                limit = subject['LIMIT'] if subject['LIMIT'] != 0 else 'NoLimit'
+                limit = subject['LIMIT'] if subject['LIMIT'] != 0 else 'Unlimit'
                 sec = subject['section']
                 
                 is_lap = self.check_overlap(rawdata['data'], n)
-                log(f'{id}: __ {eng_name} __({sec})', end= ' ')
-                if isinstance(count, str) and 'Full' in count:
-                    print(
-                        f'Full! [{limit}]'
-                        )
+                head = f'{id}: ___{eng_name}___'
+                
+                if isinstance(count, str) and 'Full' in count: 
+                    text = f'Full! [{limit}]'
                 elif is_lap: 
-                    print(
-                        f'Overlap! [{count}/{limit}]: {is_lap[0]} ({is_lap[1]})'
-                        )
+                    text = f'Overlap! [{count}/{limit}]: {is_lap[0]} ({is_lap[1]})'
                 else:
-                    print(
-                        f'Open! [{count}/{limit}]'
-                        )
+                    text = f'Open! [{count}/{limit}]'
+                    
+                loglist.append('%-6s%s'%(f'({sec})', text))
                 
                 if self.csv: 
                     self.writer(self.csv.format(subject))
-        
-        else:
-            log(id, end=': ')
-            Err = error['message_en']                                                                   
-            for part, reply in self.errorlist:
-                if part in Err: 
-                    print(reply)
-                    break
-            else: print(f'unknow error => {Err}')
+                    
+            log(head, *loglist, multiline=True)
     
     def run(self):
+        loginjson = json.dumps({
+            'function': 'login-jwt',
+            'email': f'{self.student_id}@kmitl.ac.th',
+            'password': self.password
+            })
+        
+        with requests.post(
+                'https://k8s.reg.kmitl.ac.th/api/user/', 
+                data=loginjson, 
+                headers=self.common_header | {
+                    'Content-Length': str(loginjson.__len__()),
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json;charset=utf-8'
+                    }
+                ) as token_res:
+            
+            try: token = json.loads(token_res.text)['token']
+            except KeyError: 
+                log('student-id or password incorrect')
+                os._exit(1)
+
         try:
             if self.csv: 
                 file = open('data_table.csv', 'w')
                 self.writer = csv.writer(file).writerow
                 self.writer(self.csv.field)
-
-            loginjson = json.dumps({
-                'function': 'login-jwt',
-                'email': f'{self.student_id}@kmitl.ac.th',
-                'password': self.password
-                })
-            
-            with requests.post('https://k8s.reg.kmitl.ac.th/api/user/', data=loginjson, headers=self.common_header | {
-                    'Content-Length': str(loginjson.__len__()),
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-Type': 'application/json;charset=utf-8'}) as token_res:
                 
-                q = False
-                try:
-                    token = json.loads(token_res.text)['token']
-                except: 
-                    log('student-id or password not correct')
-                    q = True
-                if q: quit()
-
             with requests.Session() as session:
                 session.headers.update(
                     self.common_header | {
@@ -265,7 +297,8 @@ class subjects_detection:
                     })   
                 my_registered = session.get(
                     'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-regis-result&'
-                    f'student_id={self.student_id}&year={self.year}&semester={self.semester}&level_id={self.level}')
+                    f'student_id={self.student_id}&year={self.year}&semester={self.semester}&level_id={self.level}'
+                    )
                 self.registered_data = json.loads(my_registered.text)
                 self.occ = self.occupy_time(self.registered_data)    
 
@@ -279,9 +312,11 @@ class subjects_detection:
                                     while 1:
                                         try: 
                                             self.main(subject_id, session)
+                                        except StopIteration: pass
                                         except self.exception as e: 
-                                            log(f'Connection Error: {e}')
+                                            log(f'{subject_id}: Connection Error''\n', e, end='\n\n')
                                         else: break
+                                        sleep(0.1)
         finally:
             if self.csv: file.close()
 
