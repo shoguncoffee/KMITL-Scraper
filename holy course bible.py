@@ -1,7 +1,8 @@
 import json, csv, os
 import urllib3, http, requests
-#import asyncio, aiohttp
+import asyncio, aiohttp
 from time import strftime, sleep
+from itertools import product
 
 
 def log(*s, t=None, multiline=False, end='\n', sep=' '):
@@ -12,14 +13,15 @@ def log(*s, t=None, multiline=False, end='\n', sep=' '):
     elif t is False:
         t = ''
         a = dash
-        
     if multiline: 
-        s = [('\n'+dash).join(str(q) for q in s)]
+        sep = '\n' + dash
         
-    print('%-6s'%t, a, *s, end=end, sep=sep)
+    print('%-7s'%t, a, sep.join(str(q) for q in s), end=end, sep='')
 
+class TooManyRequests(Exception): pass
+class RedoThisLoop(Exception): pass
 
-class csv_handle: # for overwrite method (unready)
+class csv_handle: # for overwrite method (unusable yet)
     field = [
         'subject id', 
         'section', 
@@ -33,7 +35,7 @@ class csv_handle: # for overwrite method (unready)
         'late exam'
         ]
     day = [
-        None, 
+        None, # for reserve index 0
         'อาทิตย์', 
         'จันทร์', 
         'อังคาร', 
@@ -62,6 +64,7 @@ class csv_handle: # for overwrite method (unready)
                 return f"{date}, {other_day} {teach_time}"
         else: 
             return date
+        
              
     @staticmethod
     def exam_time_format(data):
@@ -74,6 +77,7 @@ class csv_handle: # for overwrite method (unready)
                 return 'จัดสอบเอง'
             else: 
                 return f"{date} {start}-{end}"
+    
     
     def format(self, data): 
         k = [data[q] for q in self.field[:4]]
@@ -89,41 +93,18 @@ class csv_handle: # for overwrite method (unready)
 
 
 class subjects_detection:    
-    errorlist = [
-        ('not in the course schedule', 'Close'),
-        ('not pass rule in the course', 'Not qualified'),
-        ('not still registered subject (Prerequisite)', 'Require prerequisite'),
-        ('Not found Data', 'N/A'),
-        ]
-    
-    exception = (
-        requests.exceptions.ConnectTimeout,
-        requests.exceptions.ConnectionError,
-        urllib3.exceptions.ProtocolError,
-        http.client.RemoteDisconnected,
-        )
-    
-    common_header = {
-        'Accept-Language': 'en-us',
-        'Host': 'k8s.reg.kmitl.ac.th',
-        'Referer': 'https://new.reg.kmitl.ac.th/',
-        'Origin': 'https://new.reg.kmitl.ac.th',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Connection': 'keep-alive'
-        }
-    
     lookup_id = [
-        # ('01-89', '01-99', '1-9'),
-        # ('91-99', '01-99', '1-9'),
-        ('01', '07', '6'),
-        ('90', ('64','59','57'), '1-5'),
-        ]
-    # ------ example ------ (No. run from 001 to 999)
-    # 01 07 6 xxx -> CE subject
-    # maingroup branch degree No.
-    # 
-    # 90 64 5 xxx -> gen-ed subject
-    # maingroup year group No.
+            # ('01-89', '01-99', '1-9'),
+            # ('91-99', '01-99', '1-9'),
+            ('01', '07', '6'),
+            ('90', ('64','59','57'), '1-5'),
+            ]
+        # ------ example ------ (No. run from 001 to 999)
+        # 01 07 6 xxx -> CE subject
+        # maingroup branch degree No.
+        # 
+        # 90 64 5 xxx -> gen-ed subject
+        # maingroup year group No.
     
     def __init__(
             self, 
@@ -134,29 +115,96 @@ class subjects_detection:
             lookup_id = lookup_id,
             level = 1,
             csv = csv_handle # False = Not export to csv
-        ):
+            ):
+        
+        errorlist = [
+            ('not in the course schedule', 'Close'),
+            ('not pass rule in the course', 'Not qualified'),
+            ('not still registered subject (Prerequisite)', 'Require prerequisite'),
+            ('Not found Data', 'N/A'),
+            ]
+
+        exception = (
+            requests.exceptions.ConnectTimeout,
+            requests.exceptions.ConnectionError,
+            urllib3.exceptions.ProtocolError,
+            http.client.RemoteDisconnected,
+            #aiohttp.client_exceptions.ClientConnectorError,
+            )
+
+        common_header = {
+            'Accept-Language': 'en-us',
+            'Host': 'k8s.reg.kmitl.ac.th',
+            'Referer': 'https://new.reg.kmitl.ac.th/',
+            'Origin': 'https://new.reg.kmitl.ac.th',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive'
+            }
+
+        registered_url = 'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-regis-result&' \
+            f'student_id={student_id}&year={year}&semester={semester}&level_id={level}'
+        
+        token_url = 'https://k8s.reg.kmitl.ac.th/api/user/'
+        
+        token_json = json.dumps({
+            'function': 'login-jwt',
+            'email': f'{student_id}@kmitl.ac.th',
+            'password': password
+            })
+        
+        token_header = common_header | {
+                    'Content-Length': str(token_json.__len__()),
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json;charset=utf-8'
+                    }
+        
         for k, v in locals().items():
             if k != 'self': setattr(self, k, v)
-        
     
-    @staticmethod
-    def strange(s):
-        if isinstance(s, str):
-            if '-' in s:
-                start, end = s.split('-')
-                le = len(start)
-                for i in range(int(start), int(end)+1): 
-                    yield str(i).zfill(le)
-            else: yield s
-        else: yield from s
     
     @staticmethod
     def time_period(t):
-        tl = '12:00', '16:00', '20:00'
+        tl = '12:00', '16:00', '19:00'
         for n, time in enumerate(tl):
             if t < time: return n
         # 0 -> beforenoon, 1 -> afternoon, 2 -> evening
-   
+    
+    
+    @staticmethod
+    def str_range(s):
+        if isinstance(s, str):
+            if '-' in s:
+                start, end = s.split('-')
+                l = len(start)
+                for i in range(int(start), int(end)+1): 
+                    yield str(i).zfill(l)
+            else: yield s
+        else: yield from s
+    
+    
+    def minion_url(self, id):
+        return \
+            'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-can-register-by-student-id-and-subject-id'\
+            f'&subject_id={id}&student_id={self.student_id}&year={self.year}&semester={self.semester}'
+    
+    
+    def id_selecter(self, id):        
+        condition = (
+            True
+            ) 
+        if all(condition): 
+            return True
+    
+    
+    def generate_id(self):            
+        for r in self.lookup_id:
+            l = (*r, '001-999') if len(r) == 3 else r
+            seq = [self.str_range(q) for q in l]
+            for d in product(*seq):
+                id = ''.join(d)
+                if self.id_selecter(id): yield id
+
+
     def occupy_time(self, registered):
         k = {'teach':{}, 'mexam':{}, 'exam':{}}
         time_period = self.time_period
@@ -179,6 +227,7 @@ class subjects_detection:
             k['teach'][(day, period)] = id, sec
             
         return k  
+    
     
     def check_overlap(self, datalist, seq):
         time_period = self.time_period
@@ -210,22 +259,35 @@ class subjects_detection:
                     if check2: return check2
                     break
             else:
-                log(
-                    f"can't find sec {pack_sec} in {this_id} (original_sec: {this_subject['section']})"
-                    )
+                log(f"can't find sec {pack_sec} in {this_id} (original_sec: {this_subject['section']})")
 
-    def main(self, id, session):        
-        res = session.get(
-            'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-can-register-by-student-id-and-subject-id'\
-            f'&subject_id={id}&student_id={self.student_id}&year={self.year}&semester={self.semester}'
-            ).text
-        rawdata = json.loads(res)
-        try: error = rawdata['error']
-        except KeyError:
-            log(f'{id}: Respone format Error', rawdata, sep='\n', end='\n\n')
-            raise StopIteration
+
+    def apply_respone(self, id, data):
+        loglist = []
+        for n, subject in enumerate(data):
+            eng_name = subject["subject_ename"]
+            thai_name = subject["subject_tname"]
+            count = subject['COUNT']
+            limit = subject['LIMIT'] if subject['LIMIT'] != 0 else 'Unlimit'
+            sec = subject['section']
             
-        
+            is_lap = self.check_overlap(data, n)
+            
+            if isinstance(count, str) and 'Full' in count: 
+                text = f'Full! [{limit}]'
+            elif is_lap: 
+                text = f'Overlap! [{count}/{limit}] with {is_lap[0]}({is_lap[1]})'
+            else:
+                text = f'Open! [{count}/{limit}]'
+            
+            loglist.append('%-6s%s'%(f'({sec})', text))
+            
+        log(f'{id}: ___{eng_name}___', *loglist, multiline=True)
+        if self.csv: 
+            self.writer(self.csv.format(data))
+                
+    
+    def handle_respone(self, id, error, data):
         if error is not None:
             Err = error['message_en']                                     
             for part, reply in self.errorlist:
@@ -234,91 +296,79 @@ class subjects_detection:
                     break
             else: 
                 log(f'{id}: unknow error => {Err}')
-            
         else:
-            loglist = []
-            for n, subject in enumerate(rawdata['data']):
-                eng_name = subject["subject_ename"]
-                thai_name = subject["subject_tname"]
-                count = subject['COUNT']
-                limit = subject['LIMIT'] if subject['LIMIT'] != 0 else 'Unlimit'
-                sec = subject['section']
-                
-                is_lap = self.check_overlap(rawdata['data'], n)
-                head = f'{id}: ___{eng_name}___'
-                
-                if isinstance(count, str) and 'Full' in count: 
-                    text = f'Full! [{limit}]'
-                elif is_lap: 
-                    text = f'Overlap! [{count}/{limit}]: {is_lap[0]} ({is_lap[1]})'
-                else:
-                    text = f'Open! [{count}/{limit}]'
-                    
-                loglist.append('%-6s%s'%(f'({sec})', text))
-                
-                if self.csv: 
-                    self.writer(self.csv.format(subject))
-                    
-            log(head, *loglist, multiline=True)
+            self.apply_respone(id, data)
     
-    def run(self):
-        loginjson = json.dumps({
-            'function': 'login-jwt',
-            'email': f'{self.student_id}@kmitl.ac.th',
-            'password': self.password
-            })
+    
+    async def minion(self, id, session): 
+        async with session.get(self.minion_url(id)) as res:
+            rawdata = json.loads(await res.text())
         
-        with requests.post(
-                'https://k8s.reg.kmitl.ac.th/api/user/', 
-                data=loginjson, 
-                headers=self.common_header | {
-                    'Content-Length': str(loginjson.__len__()),
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-Type': 'application/json;charset=utf-8'
-                    }
-                ) as token_res:
-            
-            try: token = json.loads(token_res.text)['token']
-            except KeyError: 
-                log('student-id or password incorrect')
-                os._exit(1)
+        try: 
+            error, infomation = rawdata['error'], rawdata['data']
+        except KeyError:
+            if 'many request' in rawdata:
+                raise TooManyRequests
+            else:
+                log(f'{id}: Respone format Error', json.dumps(rawdata, indent=3), sep='\n', end='\n\n')
+                raise RedoThisLoop
+        else:
+            self.handle_respone(id, error, infomation)
 
+
+    async def loop(self, session, seq_subject_id):
+        while 1:
+            try: 
+                await self.main(seq_subject_id, session)
+            except RedoThisLoop: 
+                continue            
+            except TooManyRequests as e:
+                log(e, ', reconnect in 12 sec: ')
+                for _ in range(12):
+                    sleep(1)
+                    print('.', end='')
+                print()
+            except self.exception as e: 
+                log(f'{seq_subject_id}: Connection Error', e, sep='\n', end='\n\n')
+            else: 
+                break
+    
+    
+    async def main(self, token):
+        h = self.common_header | {
+            'Authorization': f"Bearer {token}",
+            'Accept': '*/*',
+            }
+        c = aiohttp.TCPConnector(limit=16)
+        t = aiohttp.ClientTimeout(total=5)
+        
+        async with aiohttp.ClientSession(header=h, connector=c, timeout=t) as session:
+            my_registered =  await session.get(self.registered_url)
+            self.registered_data = json.loads(await my_registered.text())
+            self.occ = self.occupy_time(self.registered_data) 
+            
+            await asyncio.gather(
+                *[self.loop(session, seq_subject_id) for seq_subject_id in self.generate_id()]
+                )
+    
+
+    def run(self):
         try:
+            file = False
+            res = requests.post(self.token_url, self.token_json, headers=self.token_header)
+            token = json.loads(res.text)['token']
+        except KeyError: 
+            log('student-id or password incorrect')
+            # os._exit(1)
+        else:
             if self.csv: 
                 file = open('data_table.csv', 'w')
                 self.writer = csv.writer(file).writerow
                 self.writer(self.csv.field)
-                
-            with requests.Session() as session:
-                session.headers.update(
-                    self.common_header | {
-                    'Authorization': f"Bearer {token}",
-                    'Accept': '*/*',
-                    })   
-                my_registered = session.get(
-                    'https://k8s.reg.kmitl.ac.th/reg/api/?function=get-regis-result&'
-                    f'student_id={self.student_id}&year={self.year}&semester={self.semester}&level_id={self.level}'
-                    )
-                self.registered_data = json.loads(my_registered.text)
-                self.occ = self.occupy_time(self.registered_data)    
-
-                strange = self.strange     
-                for D1, D2, D3 in self.lookup_id:
-                    for d1 in strange(D1):
-                        for d2 in strange(D2):
-                            for d3 in strange(D3):
-                                for order in strange('001-999'): 
-                                    subject_id = d1+d2+d3+order
-                                    while 1:
-                                        try: 
-                                            self.main(subject_id, session)
-                                        except StopIteration: pass
-                                        except self.exception as e: 
-                                            log(f'{subject_id}: Connection Error''\n', e, end='\n\n')
-                                        else: break
-                                        sleep(0.1)
+            asyncio.run(self.main(token))
         finally:
-            if self.csv: file.close()
+            res.close()
+            if self.csv and file: file.close()
 
 
 if __name__ == '__main__':
