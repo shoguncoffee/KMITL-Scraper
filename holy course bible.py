@@ -16,15 +16,13 @@ def log(*s, t=None, multiline=False, end='\n', sep=' '):
     if multiline: 
         sep = '\n' + dash
         
-    print('%-7s'%t, a, sep.join(str(q) for q in s), end=end, sep='')
+    print(
+        '%-7s'%t, a, sep.join(str(q) for q in s), 
+        end=end, sep='')
 
-class FormatError(Exception): 
-    def __init__(self, arg: object) -> None:
-        self.arg = arg
-        super().__init__(arg)
-    
-    def __str__(self) -> str:
-        return self.arg
+
+class Retrying(Exception): 
+    pass
 
 
 class csv_handle: # for overwrite method (unusable yet)
@@ -103,14 +101,6 @@ class Subjects_detection:
     URL = f'https://{host}/'
     directory_token = 'api/user/'
     directory_data = 'reg/api/' 
-    common_header = {
-        'Accept-Language': 'en-us',
-        'Host': host,
-        'Referer': 'https://new.reg.kmitl.ac.th/',
-        'Origin': 'https://new.reg.kmitl.ac.th',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Connection': 'keep-alive'
-        }
     
     lookup_id = [
             # ('01-89', '01-99', '1-9'),
@@ -133,11 +123,8 @@ class Subjects_detection:
             ]
 
     exception = (
-            requests.exceptions.ConnectTimeout,
-            requests.exceptions.ConnectionError,
-            urllib3.exceptions.ProtocolError,
-            http.client.RemoteDisconnected,
-            #aiohttp.client_exceptions.ClientConnectorError,
+            aiohttp.ClientConnectorError,
+            
             )
     
     
@@ -145,37 +132,38 @@ class Subjects_detection:
             year = 2565, semester = 1, level = 1,
             lookup_id = lookup_id, csv = csv_handle): # if csv = False -> Not export to csv
         
-        registered_url_params = {
-            'funtion': 'get-regis-result',
-            'student_id': student_id,
-            'year': year,
-            'semester': semester,
-            'level_id': level,
+        registered_arg = {
+            'url': self.URL + self.directory_data,
+            'params': {
+                'funtion': 'get-regis-result',
+                'student_id': student_id,
+                'year': year,
+                'semester': semester,
+                'level_id': level
+                }
             }
-        core_url_params = lambda id:{
-            'funtion': 'get-can-register-by-student-id-and-subject-id',
-            'subject_id': id,
-            'student_id': student_id,
-            'year': year,
-            'semester': semester,
+        core_arg = lambda id: {
+            'url': self.URL + self.directory_data,
+            'params': {
+                'funtion': 'get-can-register-by-student-id-and-subject-id',
+                'subject_id': id,
+                'student_id': student_id,
+                'year': year,
+                'semester': semester,
+                }
             }
-        token_json = json.dumps({
-            'function': 'login-jwt',
-            'email': f'{student_id}@kmitl.ac.th',
-            'password': password
-            })        
-        token_header = self.common_header | {
-            'Content-Length': str(token_json.__len__()),
-            'Accept': 'application/json, text/plain, */*',
-            'Content-Type': 'application/json;charset=utf-8'
+        token_arg = {
+            'url': self.URL + self.directory_token,
+            'data': json.dumps({
+                'function': 'login-jwt',
+                'email': f'{student_id}@kmitl.ac.th',
+                'password': password
+                }),
             }
         for k, v in locals().items():
             if k != 'self': setattr(self, k, v)
     
     
-    def get_url(self, directory):
-        return self.URL + directory
-        
     @staticmethod
     def time_period(t):
         tl = '12:00', '16:00', '19:00'
@@ -236,50 +224,36 @@ class Subjects_detection:
         return k  
     
     
-    def check_overlap(self, datalist, seq):
+    def check_overlap(self, subject):
         time_period = self.time_period
-        occ = self.occupied_time
+        occ = self.occupied_time.copy()
+        
+        for s in 'mexam', 'exam':
+            date = subject[s+'_date']
+            period = time_period(subject[s+'_time'])
+            l = date, period
+            exist = occ[s].pop(l, None)
+            if exist: return exist
+        
+        day = subject['teach_day']
+        period = time_period(subject['teach_time'])
+        l = day, period
+        return occ['teach'].pop(l, None)
+    
+
+    def display_respone(self, id, data):
+        seclist = {s['section']: s for s in data}
+        loglist = ['']
         
         def sub(subject):
-            for s in 'mexam', 'exam':
-                date = subject[s+'_date']
-                period = time_period(subject[s+'_time'])
-                l = date, period
-                exist = occ[s].pop(l, None)
-                if exist: return exist
-            
-            day = subject['teach_day']
-            period = time_period(subject['teach_time'])
-            l = day, period
-            return occ['teach'].pop(l, None)
-        
-        this_subject = datalist[seq]
-        this_id = this_subject['subject_id']
-        pack_sec = this_subject['sec_pair']
-        check1 = sub(this_subject)
-        
-        if check1: return check1
-        elif pack_sec is not None:
-            for subject in datalist:
-                if subject['section'] == pack_sec:
-                    check2 = sub(subject)
-                    if check2: return check2
-                    break
-            else:
-                log(f"can't find sec {pack_sec} in {this_id} (original_sec: {this_subject['section']})")
-
-
-    def apply_respone(self, id, data):
-        loglist = []
-        for n, subject in enumerate(data):
             eng_name = subject["subject_ename"]
             thai_name = subject["subject_tname"]
             count = subject['COUNT']
             limit = subject['LIMIT'] if subject['LIMIT'] != 0 else 'Unlimit'
             sec = subject['section']
+            pair = subject['sec_pair']
             
-            is_lap = self.check_overlap(data, n)
-            
+            is_lap = self.check_overlap(data)
             if isinstance(count, str) and 'Full' in count: 
                 text = f'Full! [{limit}]'
             elif is_lap: 
@@ -287,11 +261,17 @@ class Subjects_detection:
             else:
                 text = f'Open! [{count}/{limit}]'
             
-            loglist.append('%-6s%s'%(f'({sec})', text))
-            
-        log(f'{id}: ___{eng_name}___', *loglist, multiline=True)
-        if self.csv: 
-            self.writer(self.csv.format(data))
+            loglist.append(
+                f"{' '*10}%-{9+len(eng_name)}s {text}'%f'({sec})__{eng_name}__"
+                )
+            return pair
+        
+        for sec, subject in seclist:
+            othersec = sub(subject)                
+            if othersec is not None:
+                sub(seclist.pop(othersec))                
+        
+        log(*loglist, multiline=True)
                 
     
     def handle_respone(self, id, error, data):
@@ -304,57 +284,63 @@ class Subjects_detection:
             else: 
                 log(f'{id}: unknow error => {Err}')
         else:
-            self.apply_respone(id, data)
+            log(f'{id}: Available', end='')
+            self.display_respone(id, data)
+            if self.csv: 
+                self.writer(self.csv.format(data))
     
     
     async def core(self, id): 
-        async with self.session.get(self.core_url(id)) as res:
+        async with self.session.get(**self.core_arg(id)) as res:
             rawdata = json.loads(await res.text())
-        
         try: 
-            error, infomation = rawdata['error'], rawdata['data']
+            error = rawdata['error']
+            infomation = rawdata['data']
         except KeyError:
             if 'many request' in rawdata:
-                raise FormatError('TooManyRequest')
+                raise Retrying('Too many request')
             else:
-                log(f'{id}: Respone format Error', json.dumps(rawdata, indent=3), sep='\n', end='\n\n')
-                raise FormatError('')
+                log(
+                    f'{id}: Respone format Error', 
+                    json.dumps(rawdata, indent=3), 
+                    sep='\n', 
+                    end='\n\n'
+                    )
+                raise Retrying
         else:
             self.handle_respone(id, error, infomation)
 
 
-    async def try_loop(self, id):
-        while 1:
+    async def try_loop(self, id, limit=6):
+        for _ in range(limit):
             try: 
                 await self.core(id)
-            except FormatError as e:
-                if e == 'TooManyRequest':
-                    log(e, ', reconnect in 12 sec: ')
-                    for _ in range(12):
-                        sleep(1)
+            except Retrying as e:
+                if e == 'Too many request':
+                    log(f'{id}: {e}, reconnect in 12 sec', end=' ')
+                    for _ in range(3):
+                        await asyncio.sleep(1)
                         print('.', end='')
                     print()
-                
+
             except self.exception as e: 
                 log(f'{id}: Connection Error', e, sep='\n', end='\n\n')
             else: 
                 break
+            
+        else:
+            log(f'{id}: exceed trying for {limit} times')
     
     
     async def main(self, token):
         kwarg = {
-            'header': self.common_header | {
-                'Authorization': f"Bearer {token}",
-                'Accept': '*/*'
-                },
+            'header': {'Authorization': f"Bearer {token}"},
             'connector': aiohttp.TCPConnector(limit=16),
             'timeout': aiohttp.ClientTimeout(total=8),
-        }
+            }
         async with aiohttp.ClientSession(**kwarg) as session:
-            my_registered =  await session.get(self.get_url(self.directory_data), 
-                                               params=self.registered_url_params
-                                               )
-            self.registered_class = json.loads(await my_registered.text())
+            async with session.get(**self.registered_arg) as res:
+                self.registered_class = json.loads(await res.text())
             self.occupied_time = self.get_occupy(self.registered_class) 
             self.session = session
             
@@ -367,10 +353,8 @@ class Subjects_detection:
     def run(self):
         try:
             file = False
-            res = requests.post(self.get_url(self.directory_token), 
-                data=self.token_json, headers=self.token_header
-                )
-            token = json.loads(res.text)['token']
+            with requests.post(**self.token_arg) as res:
+                token = json.loads(res.text)['token']
         except KeyError: 
             log('student-id or password incorrect')
         else:
@@ -380,7 +364,6 @@ class Subjects_detection:
                 self.writer(self.csv.field)
             asyncio.run(self.main(token))
         finally:
-            res.close()
             if file: file.close()
 
 
