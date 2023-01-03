@@ -1,0 +1,24 @@
+670
+'1 min'
+
+880
+'2 min'
+
+699
+'3.5 min'
+
+293
+'4 min'
+
+479
+
+'17 min in 3021'
+'~30 min in 5000'
+'~10,000 in 1.5 hour'
+
+300 -> 2 min
+= 9000 -> 1 hour
+
+100-200 request per min
+
+~ 120 request per minnote
