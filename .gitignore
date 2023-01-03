@@ -133,3 +133,6 @@ test*
 temp*
 old*
 old/
+
+# Mac
+.DS_Store
