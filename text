@@ -1,0 +1,3720 @@
+16:21:53 01076031: Available
+'COUNT'
+{
+   "teach_table_id": "89784",
+   "section": "53",
+   "teach_day": "2",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "2x15:30-17:00",
+   "mexam_date": "2022-09-27",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-29",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 13:30:00",
+         "END_DATE_TIME": "2022-08-01 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-01 15:30:00",
+         "END_DATE_TIME": "2022-08-01 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 13:30:00",
+         "END_DATE_TIME": "2022-08-08 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 15:30:00",
+         "END_DATE_TIME": "2022-08-08 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 13:30:00",
+         "END_DATE_TIME": "2022-08-15 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 15:30:00",
+         "END_DATE_TIME": "2022-08-15 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 13:30:00",
+         "END_DATE_TIME": "2022-08-22 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 15:30:00",
+         "END_DATE_TIME": "2022-08-22 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 13:30:00",
+         "END_DATE_TIME": "2022-08-29 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 15:30:00",
+         "END_DATE_TIME": "2022-08-29 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 13:30:00",
+         "END_DATE_TIME": "2022-09-05 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 15:30:00",
+         "END_DATE_TIME": "2022-09-05 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 13:30:00",
+         "END_DATE_TIME": "2022-09-12 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 15:30:00",
+         "END_DATE_TIME": "2022-09-12 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 13:30:00",
+         "END_DATE_TIME": "2022-09-19 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 15:30:00",
+         "END_DATE_TIME": "2022-09-19 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 13:30:00",
+         "END_DATE_TIME": "2022-10-03 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 15:30:00",
+         "END_DATE_TIME": "2022-10-03 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 13:30:00",
+         "END_DATE_TIME": "2022-10-10 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 15:30:00",
+         "END_DATE_TIME": "2022-10-10 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 13:30:00",
+         "END_DATE_TIME": "2022-10-17 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 15:30:00",
+         "END_DATE_TIME": "2022-10-17 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 13:30:00",
+         "END_DATE_TIME": "2022-10-24 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 15:30:00",
+         "END_DATE_TIME": "2022-10-24 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 13:30:00",
+         "END_DATE_TIME": "2022-10-31 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 15:30:00",
+         "END_DATE_TIME": "2022-10-31 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 13:30:00",
+         "END_DATE_TIME": "2022-11-07 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 15:30:00",
+         "END_DATE_TIME": "2022-11-07 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 13:30:00",
+         "END_DATE_TIME": "2022-11-14 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 15:30:00",
+         "END_DATE_TIME": "2022-11-14 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 13:30:00",
+         "END_DATE_TIME": "2022-11-21 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 15:30:00",
+         "END_DATE_TIME": "2022-11-21 17:00:00"
+      }
+   ],
+   "subject_id": "01076031",
+   "subject_tname": "\u0e41\u0e04\u0e25\u0e04\u0e39\u0e25\u0e31\u0e2a",
+   "subject_ename": "CALCULUS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+                      -
+16:21:53 01076032: Available
+'COUNT'
+{
+   "teach_table_id": "89581",
+   "section": "18",
+   "teach_day": "3",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "3x15:30-17:00",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "09:30:00",
+   "mexam_time2": "12:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 13:30:00",
+         "END_DATE_TIME": "2022-08-02 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-02 15:30:00",
+         "END_DATE_TIME": "2022-08-02 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 13:30:00",
+         "END_DATE_TIME": "2022-08-09 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 15:30:00",
+         "END_DATE_TIME": "2022-08-09 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 13:30:00",
+         "END_DATE_TIME": "2022-08-16 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 15:30:00",
+         "END_DATE_TIME": "2022-08-16 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 13:30:00",
+         "END_DATE_TIME": "2022-08-23 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 15:30:00",
+         "END_DATE_TIME": "2022-08-23 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 13:30:00",
+         "END_DATE_TIME": "2022-08-30 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 15:30:00",
+         "END_DATE_TIME": "2022-08-30 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 13:30:00",
+         "END_DATE_TIME": "2022-09-06 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 15:30:00",
+         "END_DATE_TIME": "2022-09-06 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 13:30:00",
+         "END_DATE_TIME": "2022-09-13 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 15:30:00",
+         "END_DATE_TIME": "2022-09-13 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 13:30:00",
+         "END_DATE_TIME": "2022-09-20 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 15:30:00",
+         "END_DATE_TIME": "2022-09-20 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 13:30:00",
+         "END_DATE_TIME": "2022-10-04 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 15:30:00",
+         "END_DATE_TIME": "2022-10-04 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 13:30:00",
+         "END_DATE_TIME": "2022-10-11 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 15:30:00",
+         "END_DATE_TIME": "2022-10-11 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 13:30:00",
+         "END_DATE_TIME": "2022-10-18 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 15:30:00",
+         "END_DATE_TIME": "2022-10-18 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 13:30:00",
+         "END_DATE_TIME": "2022-10-25 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 15:30:00",
+         "END_DATE_TIME": "2022-10-25 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 13:30:00",
+         "END_DATE_TIME": "2022-11-01 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 15:30:00",
+         "END_DATE_TIME": "2022-11-01 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 13:30:00",
+         "END_DATE_TIME": "2022-11-08 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 15:30:00",
+         "END_DATE_TIME": "2022-11-08 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 13:30:00",
+         "END_DATE_TIME": "2022-11-15 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 15:30:00",
+         "END_DATE_TIME": "2022-11-15 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 13:30:00",
+         "END_DATE_TIME": "2022-11-22 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 15:30:00",
+         "END_DATE_TIME": "2022-11-22 17:00:00"
+      }
+   ],
+   "subject_id": "01076032",
+   "subject_tname": "\u0e2a\u0e21\u0e01\u0e32\u0e23\u0e2d\u0e19\u0e38\u0e1e\u0e31\u0e19\u0e18\u0e4c\u0e41\u0e25\u0e30\u0e1e\u0e35\u0e0a\u0e04\u0e13\u0e34\u0e15\u0e40\u0e0a\u0e34\u0e07\u0e40\u0e2a\u0e49\u0e19\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19",
+   "subject_ename": "ELEMENTARY DIFFERENTIAL EQUATIONS AND LINEAR ALGEBRA",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89582",
+   "section": "19",
+   "teach_day": "5",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "5x11:00-12:30",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "09:30:00",
+   "mexam_time2": "12:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 09:00:00",
+         "END_DATE_TIME": "2022-08-04 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-04 11:00:00",
+         "END_DATE_TIME": "2022-08-04 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 09:00:00",
+         "END_DATE_TIME": "2022-08-11 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 11:00:00",
+         "END_DATE_TIME": "2022-08-11 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 09:00:00",
+         "END_DATE_TIME": "2022-08-18 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 11:00:00",
+         "END_DATE_TIME": "2022-08-18 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 09:00:00",
+         "END_DATE_TIME": "2022-08-25 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 11:00:00",
+         "END_DATE_TIME": "2022-08-25 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 09:00:00",
+         "END_DATE_TIME": "2022-09-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 11:00:00",
+         "END_DATE_TIME": "2022-09-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 09:00:00",
+         "END_DATE_TIME": "2022-09-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 11:00:00",
+         "END_DATE_TIME": "2022-09-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 09:00:00",
+         "END_DATE_TIME": "2022-09-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 11:00:00",
+         "END_DATE_TIME": "2022-09-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 09:00:00",
+         "END_DATE_TIME": "2022-09-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 11:00:00",
+         "END_DATE_TIME": "2022-09-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 09:00:00",
+         "END_DATE_TIME": "2022-10-06 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 11:00:00",
+         "END_DATE_TIME": "2022-10-06 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 09:00:00",
+         "END_DATE_TIME": "2022-10-13 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 11:00:00",
+         "END_DATE_TIME": "2022-10-13 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 09:00:00",
+         "END_DATE_TIME": "2022-10-20 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 11:00:00",
+         "END_DATE_TIME": "2022-10-20 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 09:00:00",
+         "END_DATE_TIME": "2022-10-27 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 11:00:00",
+         "END_DATE_TIME": "2022-10-27 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 09:00:00",
+         "END_DATE_TIME": "2022-11-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 11:00:00",
+         "END_DATE_TIME": "2022-11-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 09:00:00",
+         "END_DATE_TIME": "2022-11-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 11:00:00",
+         "END_DATE_TIME": "2022-11-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 09:00:00",
+         "END_DATE_TIME": "2022-11-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 11:00:00",
+         "END_DATE_TIME": "2022-11-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 09:00:00",
+         "END_DATE_TIME": "2022-11-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 11:00:00",
+         "END_DATE_TIME": "2022-11-24 12:30:00"
+      }
+   ],
+   "subject_id": "01076032",
+   "subject_tname": "\u0e2a\u0e21\u0e01\u0e32\u0e23\u0e2d\u0e19\u0e38\u0e1e\u0e31\u0e19\u0e18\u0e4c\u0e41\u0e25\u0e30\u0e1e\u0e35\u0e0a\u0e04\u0e13\u0e34\u0e15\u0e40\u0e0a\u0e34\u0e07\u0e40\u0e2a\u0e49\u0e19\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19",
+   "subject_ename": "ELEMENTARY DIFFERENTIAL EQUATIONS AND LINEAR ALGEBRA",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89580",
+   "section": "20",
+   "teach_day": "3",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "3x11:00-12:30",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "09:30:00",
+   "mexam_time2": "12:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 09:00:00",
+         "END_DATE_TIME": "2022-08-02 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-02 11:00:00",
+         "END_DATE_TIME": "2022-08-02 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 09:00:00",
+         "END_DATE_TIME": "2022-08-09 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 11:00:00",
+         "END_DATE_TIME": "2022-08-09 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 09:00:00",
+         "END_DATE_TIME": "2022-08-16 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 11:00:00",
+         "END_DATE_TIME": "2022-08-16 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 09:00:00",
+         "END_DATE_TIME": "2022-08-23 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 11:00:00",
+         "END_DATE_TIME": "2022-08-23 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 09:00:00",
+         "END_DATE_TIME": "2022-08-30 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 11:00:00",
+         "END_DATE_TIME": "2022-08-30 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 09:00:00",
+         "END_DATE_TIME": "2022-09-06 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 11:00:00",
+         "END_DATE_TIME": "2022-09-06 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 09:00:00",
+         "END_DATE_TIME": "2022-09-13 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 11:00:00",
+         "END_DATE_TIME": "2022-09-13 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 09:00:00",
+         "END_DATE_TIME": "2022-09-20 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 11:00:00",
+         "END_DATE_TIME": "2022-09-20 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 09:00:00",
+         "END_DATE_TIME": "2022-10-04 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 11:00:00",
+         "END_DATE_TIME": "2022-10-04 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 09:00:00",
+         "END_DATE_TIME": "2022-10-11 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 11:00:00",
+         "END_DATE_TIME": "2022-10-11 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 09:00:00",
+         "END_DATE_TIME": "2022-10-18 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 11:00:00",
+         "END_DATE_TIME": "2022-10-18 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 09:00:00",
+         "END_DATE_TIME": "2022-10-25 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 11:00:00",
+         "END_DATE_TIME": "2022-10-25 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 09:00:00",
+         "END_DATE_TIME": "2022-11-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 11:00:00",
+         "END_DATE_TIME": "2022-11-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 09:00:00",
+         "END_DATE_TIME": "2022-11-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 11:00:00",
+         "END_DATE_TIME": "2022-11-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 09:00:00",
+         "END_DATE_TIME": "2022-11-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 11:00:00",
+         "END_DATE_TIME": "2022-11-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 09:00:00",
+         "END_DATE_TIME": "2022-11-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 11:00:00",
+         "END_DATE_TIME": "2022-11-22 12:30:00"
+      }
+   ],
+   "subject_id": "01076032",
+   "subject_tname": "\u0e2a\u0e21\u0e01\u0e32\u0e23\u0e2d\u0e19\u0e38\u0e1e\u0e31\u0e19\u0e18\u0e4c\u0e41\u0e25\u0e30\u0e1e\u0e35\u0e0a\u0e04\u0e13\u0e34\u0e15\u0e40\u0e0a\u0e34\u0e07\u0e40\u0e2a\u0e49\u0e19\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19",
+   "subject_ename": "ELEMENTARY DIFFERENTIAL EQUATIONS AND LINEAR ALGEBRA",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+                      -
+16:21:53 01076007: Available
+'COUNT'
+{
+   "teach_table_id": "91048",
+   "section": "1",
+   "teach_day": "3",
+   "teach_time": "17:00:00",
+   "teach_time2": "18:30:00",
+   "teachtime_str": "3x19:00-20:30",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": "101",
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 17:00:00",
+         "END_DATE_TIME": "2022-08-02 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-02 19:00:00",
+         "END_DATE_TIME": "2022-08-02 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 17:00:00",
+         "END_DATE_TIME": "2022-08-09 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 19:00:00",
+         "END_DATE_TIME": "2022-08-09 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 17:00:00",
+         "END_DATE_TIME": "2022-08-16 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 19:00:00",
+         "END_DATE_TIME": "2022-08-16 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 17:00:00",
+         "END_DATE_TIME": "2022-08-23 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 19:00:00",
+         "END_DATE_TIME": "2022-08-23 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 17:00:00",
+         "END_DATE_TIME": "2022-08-30 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 19:00:00",
+         "END_DATE_TIME": "2022-08-30 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 17:00:00",
+         "END_DATE_TIME": "2022-09-06 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 19:00:00",
+         "END_DATE_TIME": "2022-09-06 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 17:00:00",
+         "END_DATE_TIME": "2022-09-13 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 19:00:00",
+         "END_DATE_TIME": "2022-09-13 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 17:00:00",
+         "END_DATE_TIME": "2022-09-20 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 19:00:00",
+         "END_DATE_TIME": "2022-09-20 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 17:00:00",
+         "END_DATE_TIME": "2022-10-04 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 19:00:00",
+         "END_DATE_TIME": "2022-10-04 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 17:00:00",
+         "END_DATE_TIME": "2022-10-11 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 19:00:00",
+         "END_DATE_TIME": "2022-10-11 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 17:00:00",
+         "END_DATE_TIME": "2022-10-18 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 19:00:00",
+         "END_DATE_TIME": "2022-10-18 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 17:00:00",
+         "END_DATE_TIME": "2022-10-25 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 19:00:00",
+         "END_DATE_TIME": "2022-10-25 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 17:00:00",
+         "END_DATE_TIME": "2022-11-01 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 19:00:00",
+         "END_DATE_TIME": "2022-11-01 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 17:00:00",
+         "END_DATE_TIME": "2022-11-08 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 19:00:00",
+         "END_DATE_TIME": "2022-11-08 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 17:00:00",
+         "END_DATE_TIME": "2022-11-15 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 19:00:00",
+         "END_DATE_TIME": "2022-11-15 20:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 17:00:00",
+         "END_DATE_TIME": "2022-11-22 18:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 19:00:00",
+         "END_DATE_TIME": "2022-11-22 20:30:00"
+      }
+   ],
+   "subject_id": "01076007",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e2a\u0e37\u0e48\u0e2d\u0e2a\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25",
+   "subject_ename": "DATA COMMUNICATIONS",
+   "credit": "4",
+   "lect_hr": "3",
+   "prac_hr": "3",
+   "self_hr": "8",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "91053",
+   "section": "101",
+   "teach_day": "5",
+   "teach_time": "17:00:00",
+   "teach_time2": "20:00:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e1b",
+   "sec_pair": "1",
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 17:00:00",
+         "END_DATE_TIME": "2022-08-04 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 17:00:00",
+         "END_DATE_TIME": "2022-08-11 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 17:00:00",
+         "END_DATE_TIME": "2022-08-18 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 17:00:00",
+         "END_DATE_TIME": "2022-08-25 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 17:00:00",
+         "END_DATE_TIME": "2022-09-01 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 17:00:00",
+         "END_DATE_TIME": "2022-09-08 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 17:00:00",
+         "END_DATE_TIME": "2022-09-15 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 17:00:00",
+         "END_DATE_TIME": "2022-09-22 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 17:00:00",
+         "END_DATE_TIME": "2022-10-06 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 17:00:00",
+         "END_DATE_TIME": "2022-10-13 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 17:00:00",
+         "END_DATE_TIME": "2022-10-20 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 17:00:00",
+         "END_DATE_TIME": "2022-10-27 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 17:00:00",
+         "END_DATE_TIME": "2022-11-03 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 17:00:00",
+         "END_DATE_TIME": "2022-11-10 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 17:00:00",
+         "END_DATE_TIME": "2022-11-17 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 17:00:00",
+         "END_DATE_TIME": "2022-11-24 20:00:00"
+      }
+   ],
+   "subject_id": "01076007",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e2a\u0e37\u0e48\u0e2d\u0e2a\u0e32\u0e23\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25",
+   "subject_ename": "DATA COMMUNICATIONS",
+   "credit": "4",
+   "lect_hr": "3",
+   "prac_hr": "3",
+   "self_hr": "8",
+   "skip_date_time": false
+}
+                      -
+16:21:53 01076015: Available
+'COUNT'
+{
+   "teach_table_id": "89729",
+   "section": "1",
+   "teach_day": "5",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:30:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 13:30:00",
+         "END_DATE_TIME": "2022-08-04 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 13:30:00",
+         "END_DATE_TIME": "2022-08-11 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 13:30:00",
+         "END_DATE_TIME": "2022-08-18 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 13:30:00",
+         "END_DATE_TIME": "2022-08-25 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 13:30:00",
+         "END_DATE_TIME": "2022-09-01 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 13:30:00",
+         "END_DATE_TIME": "2022-09-08 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 13:30:00",
+         "END_DATE_TIME": "2022-09-15 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 13:30:00",
+         "END_DATE_TIME": "2022-09-22 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 13:30:00",
+         "END_DATE_TIME": "2022-10-06 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 13:30:00",
+         "END_DATE_TIME": "2022-10-13 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 13:30:00",
+         "END_DATE_TIME": "2022-10-20 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 13:30:00",
+         "END_DATE_TIME": "2022-10-27 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 13:30:00",
+         "END_DATE_TIME": "2022-11-03 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 13:30:00",
+         "END_DATE_TIME": "2022-11-10 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 13:30:00",
+         "END_DATE_TIME": "2022-11-17 15:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 13:30:00",
+         "END_DATE_TIME": "2022-11-24 15:30:00"
+      }
+   ],
+   "subject_id": "01076015",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e17\u0e31\u0e01\u0e29\u0e30\u0e17\u0e32\u0e07\u0e27\u0e34\u0e0a\u0e32\u0e0a\u0e35\u0e1e\u0e27\u0e34\u0e28\u0e27\u0e01\u0e23\u0e23\u0e21\u0e04\u0e2d\u0e21\u0e1e\u0e34\u0e27\u0e40\u0e15\u0e2d\u0e23\u0e4c",
+   "subject_ename": "COMPUTER ENGINEERING PROFESSIONAL DEVELOPMENT",
+   "credit": "2",
+   "lect_hr": "2",
+   "prac_hr": "0",
+   "self_hr": "4",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89722",
+   "section": "2",
+   "teach_day": "4",
+   "teach_time": "09:30:00",
+   "teach_time2": "11:30:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-03 09:30:00",
+         "END_DATE_TIME": "2022-08-03 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-10 09:30:00",
+         "END_DATE_TIME": "2022-08-10 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-17 09:30:00",
+         "END_DATE_TIME": "2022-08-17 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-24 09:30:00",
+         "END_DATE_TIME": "2022-08-24 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-31 09:30:00",
+         "END_DATE_TIME": "2022-08-31 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-07 09:30:00",
+         "END_DATE_TIME": "2022-09-07 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-14 09:30:00",
+         "END_DATE_TIME": "2022-09-14 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-21 09:30:00",
+         "END_DATE_TIME": "2022-09-21 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-05 09:30:00",
+         "END_DATE_TIME": "2022-10-05 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-12 09:30:00",
+         "END_DATE_TIME": "2022-10-12 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-19 09:30:00",
+         "END_DATE_TIME": "2022-10-19 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-26 09:30:00",
+         "END_DATE_TIME": "2022-10-26 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-02 09:30:00",
+         "END_DATE_TIME": "2022-11-02 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-09 09:30:00",
+         "END_DATE_TIME": "2022-11-09 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-16 09:30:00",
+         "END_DATE_TIME": "2022-11-16 11:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-23 09:30:00",
+         "END_DATE_TIME": "2022-11-23 11:30:00"
+      }
+   ],
+   "subject_id": "01076015",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e17\u0e31\u0e01\u0e29\u0e30\u0e17\u0e32\u0e07\u0e27\u0e34\u0e0a\u0e32\u0e0a\u0e35\u0e1e\u0e27\u0e34\u0e28\u0e27\u0e01\u0e23\u0e23\u0e21\u0e04\u0e2d\u0e21\u0e1e\u0e34\u0e27\u0e40\u0e15\u0e2d\u0e23\u0e4c",
+   "subject_ename": "COMPUTER ENGINEERING PROFESSIONAL DEVELOPMENT",
+   "credit": "2",
+   "lect_hr": "2",
+   "prac_hr": "0",
+   "self_hr": "4",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89888",
+   "section": "53",
+   "teach_day": "5",
+   "teach_time": "15:30:00",
+   "teach_time2": "17:30:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 15:30:00",
+         "END_DATE_TIME": "2022-08-04 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 15:30:00",
+         "END_DATE_TIME": "2022-08-11 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 15:30:00",
+         "END_DATE_TIME": "2022-08-18 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 15:30:00",
+         "END_DATE_TIME": "2022-08-25 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 15:30:00",
+         "END_DATE_TIME": "2022-09-01 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 15:30:00",
+         "END_DATE_TIME": "2022-09-08 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 15:30:00",
+         "END_DATE_TIME": "2022-09-15 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 15:30:00",
+         "END_DATE_TIME": "2022-09-22 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 15:30:00",
+         "END_DATE_TIME": "2022-10-06 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 15:30:00",
+         "END_DATE_TIME": "2022-10-13 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 15:30:00",
+         "END_DATE_TIME": "2022-10-20 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 15:30:00",
+         "END_DATE_TIME": "2022-10-27 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 15:30:00",
+         "END_DATE_TIME": "2022-11-03 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 15:30:00",
+         "END_DATE_TIME": "2022-11-10 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 15:30:00",
+         "END_DATE_TIME": "2022-11-17 17:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 15:30:00",
+         "END_DATE_TIME": "2022-11-24 17:30:00"
+      }
+   ],
+   "subject_id": "01076015",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e1e\u0e31\u0e12\u0e19\u0e32\u0e17\u0e31\u0e01\u0e29\u0e30\u0e17\u0e32\u0e07\u0e27\u0e34\u0e0a\u0e32\u0e0a\u0e35\u0e1e\u0e27\u0e34\u0e28\u0e27\u0e01\u0e23\u0e23\u0e21\u0e04\u0e2d\u0e21\u0e1e\u0e34\u0e27\u0e40\u0e15\u0e2d\u0e23\u0e4c",
+   "subject_ename": "COMPUTER ENGINEERING PROFESSIONAL DEVELOPMENT",
+   "credit": "2",
+   "lect_hr": "2",
+   "prac_hr": "0",
+   "self_hr": "4",
+   "skip_date_time": false
+}
+                      -
+16:21:53 01076011: Available
+'COUNT'
+{
+   "teach_table_id": "89706",
+   "section": "1",
+   "teach_day": "5",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "5x11:00-12:30",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 09:00:00",
+         "END_DATE_TIME": "2022-08-04 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-04 11:00:00",
+         "END_DATE_TIME": "2022-08-04 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 09:00:00",
+         "END_DATE_TIME": "2022-08-11 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 11:00:00",
+         "END_DATE_TIME": "2022-08-11 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 09:00:00",
+         "END_DATE_TIME": "2022-08-18 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 11:00:00",
+         "END_DATE_TIME": "2022-08-18 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 09:00:00",
+         "END_DATE_TIME": "2022-08-25 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 11:00:00",
+         "END_DATE_TIME": "2022-08-25 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 09:00:00",
+         "END_DATE_TIME": "2022-09-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 11:00:00",
+         "END_DATE_TIME": "2022-09-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 09:00:00",
+         "END_DATE_TIME": "2022-09-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 11:00:00",
+         "END_DATE_TIME": "2022-09-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 09:00:00",
+         "END_DATE_TIME": "2022-09-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 11:00:00",
+         "END_DATE_TIME": "2022-09-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 09:00:00",
+         "END_DATE_TIME": "2022-09-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 11:00:00",
+         "END_DATE_TIME": "2022-09-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 09:00:00",
+         "END_DATE_TIME": "2022-10-06 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 11:00:00",
+         "END_DATE_TIME": "2022-10-06 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 09:00:00",
+         "END_DATE_TIME": "2022-10-13 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 11:00:00",
+         "END_DATE_TIME": "2022-10-13 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 09:00:00",
+         "END_DATE_TIME": "2022-10-20 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 11:00:00",
+         "END_DATE_TIME": "2022-10-20 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 09:00:00",
+         "END_DATE_TIME": "2022-10-27 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 11:00:00",
+         "END_DATE_TIME": "2022-10-27 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 09:00:00",
+         "END_DATE_TIME": "2022-11-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 11:00:00",
+         "END_DATE_TIME": "2022-11-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 09:00:00",
+         "END_DATE_TIME": "2022-11-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 11:00:00",
+         "END_DATE_TIME": "2022-11-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 09:00:00",
+         "END_DATE_TIME": "2022-11-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 11:00:00",
+         "END_DATE_TIME": "2022-11-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 09:00:00",
+         "END_DATE_TIME": "2022-11-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 11:00:00",
+         "END_DATE_TIME": "2022-11-24 12:30:00"
+      }
+   ],
+   "subject_id": "01076011",
+   "subject_tname": "\u0e23\u0e30\u0e1a\u0e1a\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23",
+   "subject_ename": "OPERATING SYSTEMS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89709",
+   "section": "2",
+   "teach_day": "5",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "5x15:30-17:00",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 13:30:00",
+         "END_DATE_TIME": "2022-08-04 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-04 15:30:00",
+         "END_DATE_TIME": "2022-08-04 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 13:30:00",
+         "END_DATE_TIME": "2022-08-11 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 15:30:00",
+         "END_DATE_TIME": "2022-08-11 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 13:30:00",
+         "END_DATE_TIME": "2022-08-18 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 15:30:00",
+         "END_DATE_TIME": "2022-08-18 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 13:30:00",
+         "END_DATE_TIME": "2022-08-25 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 15:30:00",
+         "END_DATE_TIME": "2022-08-25 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 13:30:00",
+         "END_DATE_TIME": "2022-09-01 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 15:30:00",
+         "END_DATE_TIME": "2022-09-01 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 13:30:00",
+         "END_DATE_TIME": "2022-09-08 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 15:30:00",
+         "END_DATE_TIME": "2022-09-08 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 13:30:00",
+         "END_DATE_TIME": "2022-09-15 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 15:30:00",
+         "END_DATE_TIME": "2022-09-15 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 13:30:00",
+         "END_DATE_TIME": "2022-09-22 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 15:30:00",
+         "END_DATE_TIME": "2022-09-22 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 13:30:00",
+         "END_DATE_TIME": "2022-10-06 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 15:30:00",
+         "END_DATE_TIME": "2022-10-06 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 13:30:00",
+         "END_DATE_TIME": "2022-10-13 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 15:30:00",
+         "END_DATE_TIME": "2022-10-13 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 13:30:00",
+         "END_DATE_TIME": "2022-10-20 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 15:30:00",
+         "END_DATE_TIME": "2022-10-20 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 13:30:00",
+         "END_DATE_TIME": "2022-10-27 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 15:30:00",
+         "END_DATE_TIME": "2022-10-27 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 13:30:00",
+         "END_DATE_TIME": "2022-11-03 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 15:30:00",
+         "END_DATE_TIME": "2022-11-03 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 13:30:00",
+         "END_DATE_TIME": "2022-11-10 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 15:30:00",
+         "END_DATE_TIME": "2022-11-10 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 13:30:00",
+         "END_DATE_TIME": "2022-11-17 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 15:30:00",
+         "END_DATE_TIME": "2022-11-17 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 13:30:00",
+         "END_DATE_TIME": "2022-11-24 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 15:30:00",
+         "END_DATE_TIME": "2022-11-24 17:00:00"
+      }
+   ],
+   "subject_id": "01076011",
+   "subject_tname": "\u0e23\u0e30\u0e1a\u0e1a\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23",
+   "subject_ename": "OPERATING SYSTEMS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89712",
+   "section": "3",
+   "teach_day": "6",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "6x11:00-12:30",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-05 09:00:00",
+         "END_DATE_TIME": "2022-08-05 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-05 11:00:00",
+         "END_DATE_TIME": "2022-08-05 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-12 09:00:00",
+         "END_DATE_TIME": "2022-08-12 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-12 11:00:00",
+         "END_DATE_TIME": "2022-08-12 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-19 09:00:00",
+         "END_DATE_TIME": "2022-08-19 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-19 11:00:00",
+         "END_DATE_TIME": "2022-08-19 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-26 09:00:00",
+         "END_DATE_TIME": "2022-08-26 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-26 11:00:00",
+         "END_DATE_TIME": "2022-08-26 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-02 09:00:00",
+         "END_DATE_TIME": "2022-09-02 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-02 11:00:00",
+         "END_DATE_TIME": "2022-09-02 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-09 09:00:00",
+         "END_DATE_TIME": "2022-09-09 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-09 11:00:00",
+         "END_DATE_TIME": "2022-09-09 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-16 09:00:00",
+         "END_DATE_TIME": "2022-09-16 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-16 11:00:00",
+         "END_DATE_TIME": "2022-09-16 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-23 09:00:00",
+         "END_DATE_TIME": "2022-09-23 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-23 11:00:00",
+         "END_DATE_TIME": "2022-09-23 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-07 09:00:00",
+         "END_DATE_TIME": "2022-10-07 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-07 11:00:00",
+         "END_DATE_TIME": "2022-10-07 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-14 09:00:00",
+         "END_DATE_TIME": "2022-10-14 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-14 11:00:00",
+         "END_DATE_TIME": "2022-10-14 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-21 09:00:00",
+         "END_DATE_TIME": "2022-10-21 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-21 11:00:00",
+         "END_DATE_TIME": "2022-10-21 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-28 09:00:00",
+         "END_DATE_TIME": "2022-10-28 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-28 11:00:00",
+         "END_DATE_TIME": "2022-10-28 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-04 09:00:00",
+         "END_DATE_TIME": "2022-11-04 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-04 11:00:00",
+         "END_DATE_TIME": "2022-11-04 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-11 09:00:00",
+         "END_DATE_TIME": "2022-11-11 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-11 11:00:00",
+         "END_DATE_TIME": "2022-11-11 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-18 09:00:00",
+         "END_DATE_TIME": "2022-11-18 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-18 11:00:00",
+         "END_DATE_TIME": "2022-11-18 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-25 09:00:00",
+         "END_DATE_TIME": "2022-11-25 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-25 11:00:00",
+         "END_DATE_TIME": "2022-11-25 12:30:00"
+      }
+   ],
+   "subject_id": "01076011",
+   "subject_tname": "\u0e23\u0e30\u0e1a\u0e1a\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23",
+   "subject_ename": "OPERATING SYSTEMS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89804",
+   "section": "53",
+   "teach_day": "3",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "3x11:00-12:30",
+   "mexam_date": "2022-09-28",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-30",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 09:00:00",
+         "END_DATE_TIME": "2022-08-02 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-02 11:00:00",
+         "END_DATE_TIME": "2022-08-02 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 09:00:00",
+         "END_DATE_TIME": "2022-08-09 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 11:00:00",
+         "END_DATE_TIME": "2022-08-09 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 09:00:00",
+         "END_DATE_TIME": "2022-08-16 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 11:00:00",
+         "END_DATE_TIME": "2022-08-16 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 09:00:00",
+         "END_DATE_TIME": "2022-08-23 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 11:00:00",
+         "END_DATE_TIME": "2022-08-23 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 09:00:00",
+         "END_DATE_TIME": "2022-08-30 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 11:00:00",
+         "END_DATE_TIME": "2022-08-30 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 09:00:00",
+         "END_DATE_TIME": "2022-09-06 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 11:00:00",
+         "END_DATE_TIME": "2022-09-06 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 09:00:00",
+         "END_DATE_TIME": "2022-09-13 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 11:00:00",
+         "END_DATE_TIME": "2022-09-13 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 09:00:00",
+         "END_DATE_TIME": "2022-09-20 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 11:00:00",
+         "END_DATE_TIME": "2022-09-20 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 09:00:00",
+         "END_DATE_TIME": "2022-10-04 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 11:00:00",
+         "END_DATE_TIME": "2022-10-04 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 09:00:00",
+         "END_DATE_TIME": "2022-10-11 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 11:00:00",
+         "END_DATE_TIME": "2022-10-11 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 09:00:00",
+         "END_DATE_TIME": "2022-10-18 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 11:00:00",
+         "END_DATE_TIME": "2022-10-18 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 09:00:00",
+         "END_DATE_TIME": "2022-10-25 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 11:00:00",
+         "END_DATE_TIME": "2022-10-25 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 09:00:00",
+         "END_DATE_TIME": "2022-11-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 11:00:00",
+         "END_DATE_TIME": "2022-11-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 09:00:00",
+         "END_DATE_TIME": "2022-11-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 11:00:00",
+         "END_DATE_TIME": "2022-11-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 09:00:00",
+         "END_DATE_TIME": "2022-11-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 11:00:00",
+         "END_DATE_TIME": "2022-11-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 09:00:00",
+         "END_DATE_TIME": "2022-11-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 11:00:00",
+         "END_DATE_TIME": "2022-11-22 12:30:00"
+      }
+   ],
+   "subject_id": "01076011",
+   "subject_tname": "\u0e23\u0e30\u0e1a\u0e1a\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23",
+   "subject_ename": "OPERATING SYSTEMS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+                      -
+16:21:54 01076101: unknow error => This course cannot be repeated register. (Only students who had grades of D+, D, and F able to repeat the same course.)
+16:21:55 01076112: Available
+'COUNT'
+{
+   "teach_table_id": "89574",
+   "section": "18",
+   "teach_day": "2",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "2x11:00-12:30",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "2022-12-09",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 09:00:00",
+         "END_DATE_TIME": "2022-08-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-01 11:00:00",
+         "END_DATE_TIME": "2022-08-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 09:00:00",
+         "END_DATE_TIME": "2022-08-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 11:00:00",
+         "END_DATE_TIME": "2022-08-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 09:00:00",
+         "END_DATE_TIME": "2022-08-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 11:00:00",
+         "END_DATE_TIME": "2022-08-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 09:00:00",
+         "END_DATE_TIME": "2022-08-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 11:00:00",
+         "END_DATE_TIME": "2022-08-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 09:00:00",
+         "END_DATE_TIME": "2022-08-29 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 11:00:00",
+         "END_DATE_TIME": "2022-08-29 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 09:00:00",
+         "END_DATE_TIME": "2022-09-05 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 11:00:00",
+         "END_DATE_TIME": "2022-09-05 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 09:00:00",
+         "END_DATE_TIME": "2022-09-12 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 11:00:00",
+         "END_DATE_TIME": "2022-09-12 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 09:00:00",
+         "END_DATE_TIME": "2022-09-19 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 11:00:00",
+         "END_DATE_TIME": "2022-09-19 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 09:00:00",
+         "END_DATE_TIME": "2022-10-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 11:00:00",
+         "END_DATE_TIME": "2022-10-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 09:00:00",
+         "END_DATE_TIME": "2022-10-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 11:00:00",
+         "END_DATE_TIME": "2022-10-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 09:00:00",
+         "END_DATE_TIME": "2022-10-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 11:00:00",
+         "END_DATE_TIME": "2022-10-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 09:00:00",
+         "END_DATE_TIME": "2022-10-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 11:00:00",
+         "END_DATE_TIME": "2022-10-24 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 09:00:00",
+         "END_DATE_TIME": "2022-10-31 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 11:00:00",
+         "END_DATE_TIME": "2022-10-31 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 09:00:00",
+         "END_DATE_TIME": "2022-11-07 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 11:00:00",
+         "END_DATE_TIME": "2022-11-07 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 09:00:00",
+         "END_DATE_TIME": "2022-11-14 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 11:00:00",
+         "END_DATE_TIME": "2022-11-14 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 09:00:00",
+         "END_DATE_TIME": "2022-11-21 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 11:00:00",
+         "END_DATE_TIME": "2022-11-21 12:30:00"
+      }
+   ],
+   "subject_id": "01076112",
+   "subject_tname": "\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25 ",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89575",
+   "section": "19",
+   "teach_day": "2",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "2x11:00-12:30",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "2022-12-09",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 09:00:00",
+         "END_DATE_TIME": "2022-08-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-01 11:00:00",
+         "END_DATE_TIME": "2022-08-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 09:00:00",
+         "END_DATE_TIME": "2022-08-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 11:00:00",
+         "END_DATE_TIME": "2022-08-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 09:00:00",
+         "END_DATE_TIME": "2022-08-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 11:00:00",
+         "END_DATE_TIME": "2022-08-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 09:00:00",
+         "END_DATE_TIME": "2022-08-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 11:00:00",
+         "END_DATE_TIME": "2022-08-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 09:00:00",
+         "END_DATE_TIME": "2022-08-29 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 11:00:00",
+         "END_DATE_TIME": "2022-08-29 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 09:00:00",
+         "END_DATE_TIME": "2022-09-05 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 11:00:00",
+         "END_DATE_TIME": "2022-09-05 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 09:00:00",
+         "END_DATE_TIME": "2022-09-12 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 11:00:00",
+         "END_DATE_TIME": "2022-09-12 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 09:00:00",
+         "END_DATE_TIME": "2022-09-19 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 11:00:00",
+         "END_DATE_TIME": "2022-09-19 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 09:00:00",
+         "END_DATE_TIME": "2022-10-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 11:00:00",
+         "END_DATE_TIME": "2022-10-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 09:00:00",
+         "END_DATE_TIME": "2022-10-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 11:00:00",
+         "END_DATE_TIME": "2022-10-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 09:00:00",
+         "END_DATE_TIME": "2022-10-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 11:00:00",
+         "END_DATE_TIME": "2022-10-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 09:00:00",
+         "END_DATE_TIME": "2022-10-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 11:00:00",
+         "END_DATE_TIME": "2022-10-24 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 09:00:00",
+         "END_DATE_TIME": "2022-10-31 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 11:00:00",
+         "END_DATE_TIME": "2022-10-31 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 09:00:00",
+         "END_DATE_TIME": "2022-11-07 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 11:00:00",
+         "END_DATE_TIME": "2022-11-07 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 09:00:00",
+         "END_DATE_TIME": "2022-11-14 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 11:00:00",
+         "END_DATE_TIME": "2022-11-14 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 09:00:00",
+         "END_DATE_TIME": "2022-11-21 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 11:00:00",
+         "END_DATE_TIME": "2022-11-21 12:30:00"
+      }
+   ],
+   "subject_id": "01076112",
+   "subject_tname": "\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25 ",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89576",
+   "section": "20",
+   "teach_day": "2",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "2x11:00-12:30",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "2022-12-09",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 09:00:00",
+         "END_DATE_TIME": "2022-08-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-01 11:00:00",
+         "END_DATE_TIME": "2022-08-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 09:00:00",
+         "END_DATE_TIME": "2022-08-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 11:00:00",
+         "END_DATE_TIME": "2022-08-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 09:00:00",
+         "END_DATE_TIME": "2022-08-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 11:00:00",
+         "END_DATE_TIME": "2022-08-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 09:00:00",
+         "END_DATE_TIME": "2022-08-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 11:00:00",
+         "END_DATE_TIME": "2022-08-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 09:00:00",
+         "END_DATE_TIME": "2022-08-29 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 11:00:00",
+         "END_DATE_TIME": "2022-08-29 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 09:00:00",
+         "END_DATE_TIME": "2022-09-05 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 11:00:00",
+         "END_DATE_TIME": "2022-09-05 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 09:00:00",
+         "END_DATE_TIME": "2022-09-12 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 11:00:00",
+         "END_DATE_TIME": "2022-09-12 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 09:00:00",
+         "END_DATE_TIME": "2022-09-19 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 11:00:00",
+         "END_DATE_TIME": "2022-09-19 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 09:00:00",
+         "END_DATE_TIME": "2022-10-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 11:00:00",
+         "END_DATE_TIME": "2022-10-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 09:00:00",
+         "END_DATE_TIME": "2022-10-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 11:00:00",
+         "END_DATE_TIME": "2022-10-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 09:00:00",
+         "END_DATE_TIME": "2022-10-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 11:00:00",
+         "END_DATE_TIME": "2022-10-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 09:00:00",
+         "END_DATE_TIME": "2022-10-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 11:00:00",
+         "END_DATE_TIME": "2022-10-24 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 09:00:00",
+         "END_DATE_TIME": "2022-10-31 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 11:00:00",
+         "END_DATE_TIME": "2022-10-31 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 09:00:00",
+         "END_DATE_TIME": "2022-11-07 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 11:00:00",
+         "END_DATE_TIME": "2022-11-07 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 09:00:00",
+         "END_DATE_TIME": "2022-11-14 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 11:00:00",
+         "END_DATE_TIME": "2022-11-14 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 09:00:00",
+         "END_DATE_TIME": "2022-11-21 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 11:00:00",
+         "END_DATE_TIME": "2022-11-21 12:30:00"
+      }
+   ],
+   "subject_id": "01076112",
+   "subject_tname": "\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25 ",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89773",
+   "section": "53",
+   "teach_day": "2",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "2x11:00-12:30",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "2022-12-09",
+   "exam_time": "09:30:00",
+   "exam_time2": "12:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 09:00:00",
+         "END_DATE_TIME": "2022-08-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-01 11:00:00",
+         "END_DATE_TIME": "2022-08-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 09:00:00",
+         "END_DATE_TIME": "2022-08-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 11:00:00",
+         "END_DATE_TIME": "2022-08-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 09:00:00",
+         "END_DATE_TIME": "2022-08-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 11:00:00",
+         "END_DATE_TIME": "2022-08-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 09:00:00",
+         "END_DATE_TIME": "2022-08-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 11:00:00",
+         "END_DATE_TIME": "2022-08-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 09:00:00",
+         "END_DATE_TIME": "2022-08-29 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 11:00:00",
+         "END_DATE_TIME": "2022-08-29 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 09:00:00",
+         "END_DATE_TIME": "2022-09-05 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 11:00:00",
+         "END_DATE_TIME": "2022-09-05 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 09:00:00",
+         "END_DATE_TIME": "2022-09-12 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 11:00:00",
+         "END_DATE_TIME": "2022-09-12 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 09:00:00",
+         "END_DATE_TIME": "2022-09-19 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 11:00:00",
+         "END_DATE_TIME": "2022-09-19 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 09:00:00",
+         "END_DATE_TIME": "2022-10-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 11:00:00",
+         "END_DATE_TIME": "2022-10-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 09:00:00",
+         "END_DATE_TIME": "2022-10-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 11:00:00",
+         "END_DATE_TIME": "2022-10-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 09:00:00",
+         "END_DATE_TIME": "2022-10-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 11:00:00",
+         "END_DATE_TIME": "2022-10-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 09:00:00",
+         "END_DATE_TIME": "2022-10-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 11:00:00",
+         "END_DATE_TIME": "2022-10-24 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 09:00:00",
+         "END_DATE_TIME": "2022-10-31 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 11:00:00",
+         "END_DATE_TIME": "2022-10-31 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 09:00:00",
+         "END_DATE_TIME": "2022-11-07 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 11:00:00",
+         "END_DATE_TIME": "2022-11-07 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 09:00:00",
+         "END_DATE_TIME": "2022-11-14 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 11:00:00",
+         "END_DATE_TIME": "2022-11-14 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 09:00:00",
+         "END_DATE_TIME": "2022-11-21 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 11:00:00",
+         "END_DATE_TIME": "2022-11-21 12:30:00"
+      }
+   ],
+   "subject_id": "01076112",
+   "subject_tname": "\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25 ",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+                      -
+16:21:55 01076103: unknow error => This course cannot be repeated register. (Only students who had grades of D+, D, and F able to repeat the same course.)
+16:21:55 01076104: unknow error => This course cannot be repeated register. (Only students who had grades of D+, D, and F able to repeat the same course.)
+16:21:56 01076113: Available
+'COUNT'
+{
+   "teach_table_id": "89577",
+   "section": "118",
+   "teach_day": "2",
+   "teach_time": "13:30:00",
+   "teach_time2": "16:30:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e1b",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 13:30:00",
+         "END_DATE_TIME": "2022-08-01 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 13:30:00",
+         "END_DATE_TIME": "2022-08-08 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 13:30:00",
+         "END_DATE_TIME": "2022-08-15 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 13:30:00",
+         "END_DATE_TIME": "2022-08-22 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 13:30:00",
+         "END_DATE_TIME": "2022-08-29 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 13:30:00",
+         "END_DATE_TIME": "2022-09-05 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 13:30:00",
+         "END_DATE_TIME": "2022-09-12 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 13:30:00",
+         "END_DATE_TIME": "2022-09-19 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 13:30:00",
+         "END_DATE_TIME": "2022-10-03 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 13:30:00",
+         "END_DATE_TIME": "2022-10-10 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 13:30:00",
+         "END_DATE_TIME": "2022-10-17 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 13:30:00",
+         "END_DATE_TIME": "2022-10-24 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 13:30:00",
+         "END_DATE_TIME": "2022-10-31 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 13:30:00",
+         "END_DATE_TIME": "2022-11-07 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 13:30:00",
+         "END_DATE_TIME": "2022-11-14 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 13:30:00",
+         "END_DATE_TIME": "2022-11-21 16:30:00"
+      }
+   ],
+   "subject_id": "01076113",
+   "subject_tname": "\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS IN PRACTICE",
+   "credit": "1",
+   "lect_hr": "0",
+   "prac_hr": "3",
+   "self_hr": "2",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89578",
+   "section": "119",
+   "teach_day": "3",
+   "teach_time": "09:00:00",
+   "teach_time2": "12:00:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e1b",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 09:00:00",
+         "END_DATE_TIME": "2022-08-02 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 09:00:00",
+         "END_DATE_TIME": "2022-08-09 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 09:00:00",
+         "END_DATE_TIME": "2022-08-16 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 09:00:00",
+         "END_DATE_TIME": "2022-08-23 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 09:00:00",
+         "END_DATE_TIME": "2022-08-30 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 09:00:00",
+         "END_DATE_TIME": "2022-09-06 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 09:00:00",
+         "END_DATE_TIME": "2022-09-13 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 09:00:00",
+         "END_DATE_TIME": "2022-09-20 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 09:00:00",
+         "END_DATE_TIME": "2022-10-04 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 09:00:00",
+         "END_DATE_TIME": "2022-10-11 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 09:00:00",
+         "END_DATE_TIME": "2022-10-18 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 09:00:00",
+         "END_DATE_TIME": "2022-10-25 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 09:00:00",
+         "END_DATE_TIME": "2022-11-01 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 09:00:00",
+         "END_DATE_TIME": "2022-11-08 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 09:00:00",
+         "END_DATE_TIME": "2022-11-15 12:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 09:00:00",
+         "END_DATE_TIME": "2022-11-22 12:00:00"
+      }
+   ],
+   "subject_id": "01076113",
+   "subject_tname": "\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS IN PRACTICE",
+   "credit": "1",
+   "lect_hr": "0",
+   "prac_hr": "3",
+   "self_hr": "2",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89579",
+   "section": "120",
+   "teach_day": "3",
+   "teach_time": "13:30:00",
+   "teach_time2": "16:30:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e1b",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 13:30:00",
+         "END_DATE_TIME": "2022-08-02 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 13:30:00",
+         "END_DATE_TIME": "2022-08-09 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 13:30:00",
+         "END_DATE_TIME": "2022-08-16 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 13:30:00",
+         "END_DATE_TIME": "2022-08-23 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 13:30:00",
+         "END_DATE_TIME": "2022-08-30 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 13:30:00",
+         "END_DATE_TIME": "2022-09-06 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 13:30:00",
+         "END_DATE_TIME": "2022-09-13 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 13:30:00",
+         "END_DATE_TIME": "2022-09-20 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 13:30:00",
+         "END_DATE_TIME": "2022-10-04 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 13:30:00",
+         "END_DATE_TIME": "2022-10-11 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 13:30:00",
+         "END_DATE_TIME": "2022-10-18 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 13:30:00",
+         "END_DATE_TIME": "2022-10-25 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 13:30:00",
+         "END_DATE_TIME": "2022-11-01 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 13:30:00",
+         "END_DATE_TIME": "2022-11-08 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 13:30:00",
+         "END_DATE_TIME": "2022-11-15 16:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 13:30:00",
+         "END_DATE_TIME": "2022-11-22 16:30:00"
+      }
+   ],
+   "subject_id": "01076113",
+   "subject_tname": "\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS IN PRACTICE",
+   "credit": "1",
+   "lect_hr": "0",
+   "prac_hr": "3",
+   "self_hr": "2",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89796",
+   "section": "153",
+   "teach_day": "3",
+   "teach_time": "17:00:00",
+   "teach_time2": "20:00:00",
+   "teachtime_str": "",
+   "mexam_date": "0000-00-00",
+   "mexam_time": "00:00:00",
+   "mexam_time2": "00:00:00",
+   "exam_date": "0000-00-00",
+   "exam_time": "00:00:00",
+   "exam_time2": "00:00:00",
+   "lect_or_prac": "\u0e1b",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-02 17:00:00",
+         "END_DATE_TIME": "2022-08-02 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-09 17:00:00",
+         "END_DATE_TIME": "2022-08-09 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-16 17:00:00",
+         "END_DATE_TIME": "2022-08-16 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-23 17:00:00",
+         "END_DATE_TIME": "2022-08-23 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-30 17:00:00",
+         "END_DATE_TIME": "2022-08-30 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-06 17:00:00",
+         "END_DATE_TIME": "2022-09-06 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-13 17:00:00",
+         "END_DATE_TIME": "2022-09-13 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-20 17:00:00",
+         "END_DATE_TIME": "2022-09-20 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-04 17:00:00",
+         "END_DATE_TIME": "2022-10-04 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-11 17:00:00",
+         "END_DATE_TIME": "2022-10-11 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-18 17:00:00",
+         "END_DATE_TIME": "2022-10-18 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-25 17:00:00",
+         "END_DATE_TIME": "2022-10-25 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-01 17:00:00",
+         "END_DATE_TIME": "2022-11-01 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-08 17:00:00",
+         "END_DATE_TIME": "2022-11-08 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-15 17:00:00",
+         "END_DATE_TIME": "2022-11-15 20:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-22 17:00:00",
+         "END_DATE_TIME": "2022-11-22 20:00:00"
+      }
+   ],
+   "subject_id": "01076113",
+   "subject_tname": "\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e01\u0e32\u0e23\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e30\u0e1a\u0e1a\u0e14\u0e34\u0e08\u0e34\u0e15\u0e2d\u0e25",
+   "subject_ename": "DIGITAL SYSTEM FUNDAMENTALS IN PRACTICE",
+   "credit": "1",
+   "lect_hr": "0",
+   "prac_hr": "3",
+   "self_hr": "2",
+   "skip_date_time": false
+}
+                      -
+16:21:56 01076140: Available
+'COUNT'
+{
+   "teach_table_id": "89927",
+   "section": "16",
+   "teach_day": "6",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "6x15:30-17:00",
+   "mexam_date": "2022-09-27",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-29",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-05 13:30:00",
+         "END_DATE_TIME": "2022-08-05 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-05 15:30:00",
+         "END_DATE_TIME": "2022-08-05 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-12 13:30:00",
+         "END_DATE_TIME": "2022-08-12 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-12 15:30:00",
+         "END_DATE_TIME": "2022-08-12 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-19 13:30:00",
+         "END_DATE_TIME": "2022-08-19 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-19 15:30:00",
+         "END_DATE_TIME": "2022-08-19 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-26 13:30:00",
+         "END_DATE_TIME": "2022-08-26 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-26 15:30:00",
+         "END_DATE_TIME": "2022-08-26 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-02 13:30:00",
+         "END_DATE_TIME": "2022-09-02 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-02 15:30:00",
+         "END_DATE_TIME": "2022-09-02 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-09 13:30:00",
+         "END_DATE_TIME": "2022-09-09 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-09 15:30:00",
+         "END_DATE_TIME": "2022-09-09 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-16 13:30:00",
+         "END_DATE_TIME": "2022-09-16 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-16 15:30:00",
+         "END_DATE_TIME": "2022-09-16 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-23 13:30:00",
+         "END_DATE_TIME": "2022-09-23 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-23 15:30:00",
+         "END_DATE_TIME": "2022-09-23 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-07 13:30:00",
+         "END_DATE_TIME": "2022-10-07 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-07 15:30:00",
+         "END_DATE_TIME": "2022-10-07 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-14 13:30:00",
+         "END_DATE_TIME": "2022-10-14 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-14 15:30:00",
+         "END_DATE_TIME": "2022-10-14 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-21 13:30:00",
+         "END_DATE_TIME": "2022-10-21 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-21 15:30:00",
+         "END_DATE_TIME": "2022-10-21 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-28 13:30:00",
+         "END_DATE_TIME": "2022-10-28 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-28 15:30:00",
+         "END_DATE_TIME": "2022-10-28 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-04 13:30:00",
+         "END_DATE_TIME": "2022-11-04 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-04 15:30:00",
+         "END_DATE_TIME": "2022-11-04 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-11 13:30:00",
+         "END_DATE_TIME": "2022-11-11 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-11 15:30:00",
+         "END_DATE_TIME": "2022-11-11 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-18 13:30:00",
+         "END_DATE_TIME": "2022-11-18 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-18 15:30:00",
+         "END_DATE_TIME": "2022-11-18 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-25 13:30:00",
+         "END_DATE_TIME": "2022-11-25 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-25 15:30:00",
+         "END_DATE_TIME": "2022-11-25 17:00:00"
+      }
+   ],
+   "subject_id": "01076140",
+   "subject_tname": "\u0e41\u0e04\u0e25\u0e04\u0e39\u0e25\u0e31\u0e2a 1",
+   "subject_ename": "CALCULUS 1",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89561",
+   "section": "17",
+   "teach_day": "5",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "5x11:00-12:30",
+   "mexam_date": "2022-09-27",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-11-29",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-04 09:00:00",
+         "END_DATE_TIME": "2022-08-04 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-04 11:00:00",
+         "END_DATE_TIME": "2022-08-04 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 09:00:00",
+         "END_DATE_TIME": "2022-08-11 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-11 11:00:00",
+         "END_DATE_TIME": "2022-08-11 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 09:00:00",
+         "END_DATE_TIME": "2022-08-18 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-18 11:00:00",
+         "END_DATE_TIME": "2022-08-18 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 09:00:00",
+         "END_DATE_TIME": "2022-08-25 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-25 11:00:00",
+         "END_DATE_TIME": "2022-08-25 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 09:00:00",
+         "END_DATE_TIME": "2022-09-01 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-01 11:00:00",
+         "END_DATE_TIME": "2022-09-01 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 09:00:00",
+         "END_DATE_TIME": "2022-09-08 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-08 11:00:00",
+         "END_DATE_TIME": "2022-09-08 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 09:00:00",
+         "END_DATE_TIME": "2022-09-15 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-15 11:00:00",
+         "END_DATE_TIME": "2022-09-15 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 09:00:00",
+         "END_DATE_TIME": "2022-09-22 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-22 11:00:00",
+         "END_DATE_TIME": "2022-09-22 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 09:00:00",
+         "END_DATE_TIME": "2022-10-06 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-06 11:00:00",
+         "END_DATE_TIME": "2022-10-06 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 09:00:00",
+         "END_DATE_TIME": "2022-10-13 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-13 11:00:00",
+         "END_DATE_TIME": "2022-10-13 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 09:00:00",
+         "END_DATE_TIME": "2022-10-20 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-20 11:00:00",
+         "END_DATE_TIME": "2022-10-20 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 09:00:00",
+         "END_DATE_TIME": "2022-10-27 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-27 11:00:00",
+         "END_DATE_TIME": "2022-10-27 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 09:00:00",
+         "END_DATE_TIME": "2022-11-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-03 11:00:00",
+         "END_DATE_TIME": "2022-11-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 09:00:00",
+         "END_DATE_TIME": "2022-11-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-10 11:00:00",
+         "END_DATE_TIME": "2022-11-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 09:00:00",
+         "END_DATE_TIME": "2022-11-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-17 11:00:00",
+         "END_DATE_TIME": "2022-11-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 09:00:00",
+         "END_DATE_TIME": "2022-11-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-24 11:00:00",
+         "END_DATE_TIME": "2022-11-24 12:30:00"
+      }
+   ],
+   "subject_id": "01076140",
+   "subject_tname": "\u0e41\u0e04\u0e25\u0e04\u0e39\u0e25\u0e31\u0e2a 1",
+   "subject_ename": "CALCULUS 1",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+                      -
+16:21:56 01076118: Available
+'COUNT'
+{
+   "teach_table_id": "89591",
+   "section": "18",
+   "teach_day": "4",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "4x15:30-17:00",
+   "mexam_date": "2022-09-30",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-12-06",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-03 13:30:00",
+         "END_DATE_TIME": "2022-08-03 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-03 15:30:00",
+         "END_DATE_TIME": "2022-08-03 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-10 13:30:00",
+         "END_DATE_TIME": "2022-08-10 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-10 15:30:00",
+         "END_DATE_TIME": "2022-08-10 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-17 13:30:00",
+         "END_DATE_TIME": "2022-08-17 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-17 15:30:00",
+         "END_DATE_TIME": "2022-08-17 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-24 13:30:00",
+         "END_DATE_TIME": "2022-08-24 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-24 15:30:00",
+         "END_DATE_TIME": "2022-08-24 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-31 13:30:00",
+         "END_DATE_TIME": "2022-08-31 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-31 15:30:00",
+         "END_DATE_TIME": "2022-08-31 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-07 13:30:00",
+         "END_DATE_TIME": "2022-09-07 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-07 15:30:00",
+         "END_DATE_TIME": "2022-09-07 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-14 13:30:00",
+         "END_DATE_TIME": "2022-09-14 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-14 15:30:00",
+         "END_DATE_TIME": "2022-09-14 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-21 13:30:00",
+         "END_DATE_TIME": "2022-09-21 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-21 15:30:00",
+         "END_DATE_TIME": "2022-09-21 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-05 13:30:00",
+         "END_DATE_TIME": "2022-10-05 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-05 15:30:00",
+         "END_DATE_TIME": "2022-10-05 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-12 13:30:00",
+         "END_DATE_TIME": "2022-10-12 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-12 15:30:00",
+         "END_DATE_TIME": "2022-10-12 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-19 13:30:00",
+         "END_DATE_TIME": "2022-10-19 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-19 15:30:00",
+         "END_DATE_TIME": "2022-10-19 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-26 13:30:00",
+         "END_DATE_TIME": "2022-10-26 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-26 15:30:00",
+         "END_DATE_TIME": "2022-10-26 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-02 13:30:00",
+         "END_DATE_TIME": "2022-11-02 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-02 15:30:00",
+         "END_DATE_TIME": "2022-11-02 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-09 13:30:00",
+         "END_DATE_TIME": "2022-11-09 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-09 15:30:00",
+         "END_DATE_TIME": "2022-11-09 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-16 13:30:00",
+         "END_DATE_TIME": "2022-11-16 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-16 15:30:00",
+         "END_DATE_TIME": "2022-11-16 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-23 13:30:00",
+         "END_DATE_TIME": "2022-11-23 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-23 15:30:00",
+         "END_DATE_TIME": "2022-11-23 17:00:00"
+      }
+   ],
+   "subject_id": "01076118",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e14\u0e39\u0e41\u0e25\u0e41\u0e1e\u0e25\u0e17\u0e1f\u0e2d\u0e23\u0e4c\u0e21\u0e23\u0e30\u0e1a\u0e1a",
+   "subject_ename": "SYSTEM PLATFORM ADMINISTRATION",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89590",
+   "section": "19",
+   "teach_day": "4",
+   "teach_time": "09:00:00",
+   "teach_time2": "10:30:00",
+   "teachtime_str": "4x11:00-12:30",
+   "mexam_date": "2022-09-30",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-12-06",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-03 09:00:00",
+         "END_DATE_TIME": "2022-08-03 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-03 11:00:00",
+         "END_DATE_TIME": "2022-08-03 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-10 09:00:00",
+         "END_DATE_TIME": "2022-08-10 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-10 11:00:00",
+         "END_DATE_TIME": "2022-08-10 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-17 09:00:00",
+         "END_DATE_TIME": "2022-08-17 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-17 11:00:00",
+         "END_DATE_TIME": "2022-08-17 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-24 09:00:00",
+         "END_DATE_TIME": "2022-08-24 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-24 11:00:00",
+         "END_DATE_TIME": "2022-08-24 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-31 09:00:00",
+         "END_DATE_TIME": "2022-08-31 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-31 11:00:00",
+         "END_DATE_TIME": "2022-08-31 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-07 09:00:00",
+         "END_DATE_TIME": "2022-09-07 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-07 11:00:00",
+         "END_DATE_TIME": "2022-09-07 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-14 09:00:00",
+         "END_DATE_TIME": "2022-09-14 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-14 11:00:00",
+         "END_DATE_TIME": "2022-09-14 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-21 09:00:00",
+         "END_DATE_TIME": "2022-09-21 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-21 11:00:00",
+         "END_DATE_TIME": "2022-09-21 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-05 09:00:00",
+         "END_DATE_TIME": "2022-10-05 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-05 11:00:00",
+         "END_DATE_TIME": "2022-10-05 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-12 09:00:00",
+         "END_DATE_TIME": "2022-10-12 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-12 11:00:00",
+         "END_DATE_TIME": "2022-10-12 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-19 09:00:00",
+         "END_DATE_TIME": "2022-10-19 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-19 11:00:00",
+         "END_DATE_TIME": "2022-10-19 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-26 09:00:00",
+         "END_DATE_TIME": "2022-10-26 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-26 11:00:00",
+         "END_DATE_TIME": "2022-10-26 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-02 09:00:00",
+         "END_DATE_TIME": "2022-11-02 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-02 11:00:00",
+         "END_DATE_TIME": "2022-11-02 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-09 09:00:00",
+         "END_DATE_TIME": "2022-11-09 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-09 11:00:00",
+         "END_DATE_TIME": "2022-11-09 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-16 09:00:00",
+         "END_DATE_TIME": "2022-11-16 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-16 11:00:00",
+         "END_DATE_TIME": "2022-11-16 12:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-23 09:00:00",
+         "END_DATE_TIME": "2022-11-23 10:30:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-23 11:00:00",
+         "END_DATE_TIME": "2022-11-23 12:30:00"
+      }
+   ],
+   "subject_id": "01076118",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e14\u0e39\u0e41\u0e25\u0e41\u0e1e\u0e25\u0e17\u0e1f\u0e2d\u0e23\u0e4c\u0e21\u0e23\u0e30\u0e1a\u0e1a",
+   "subject_ename": "SYSTEM PLATFORM ADMINISTRATION",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89584",
+   "section": "20",
+   "teach_day": "2",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "2x15:30-17:00",
+   "mexam_date": "2022-09-30",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-12-06",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-01 13:30:00",
+         "END_DATE_TIME": "2022-08-01 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-01 15:30:00",
+         "END_DATE_TIME": "2022-08-01 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 13:30:00",
+         "END_DATE_TIME": "2022-08-08 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-08 15:30:00",
+         "END_DATE_TIME": "2022-08-08 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 13:30:00",
+         "END_DATE_TIME": "2022-08-15 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-15 15:30:00",
+         "END_DATE_TIME": "2022-08-15 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 13:30:00",
+         "END_DATE_TIME": "2022-08-22 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-22 15:30:00",
+         "END_DATE_TIME": "2022-08-22 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 13:30:00",
+         "END_DATE_TIME": "2022-08-29 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-29 15:30:00",
+         "END_DATE_TIME": "2022-08-29 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 13:30:00",
+         "END_DATE_TIME": "2022-09-05 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-05 15:30:00",
+         "END_DATE_TIME": "2022-09-05 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 13:30:00",
+         "END_DATE_TIME": "2022-09-12 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-12 15:30:00",
+         "END_DATE_TIME": "2022-09-12 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 13:30:00",
+         "END_DATE_TIME": "2022-09-19 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-19 15:30:00",
+         "END_DATE_TIME": "2022-09-19 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 13:30:00",
+         "END_DATE_TIME": "2022-10-03 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-03 15:30:00",
+         "END_DATE_TIME": "2022-10-03 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 13:30:00",
+         "END_DATE_TIME": "2022-10-10 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-10 15:30:00",
+         "END_DATE_TIME": "2022-10-10 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 13:30:00",
+         "END_DATE_TIME": "2022-10-17 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-17 15:30:00",
+         "END_DATE_TIME": "2022-10-17 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 13:30:00",
+         "END_DATE_TIME": "2022-10-24 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-24 15:30:00",
+         "END_DATE_TIME": "2022-10-24 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 13:30:00",
+         "END_DATE_TIME": "2022-10-31 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-31 15:30:00",
+         "END_DATE_TIME": "2022-10-31 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 13:30:00",
+         "END_DATE_TIME": "2022-11-07 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-07 15:30:00",
+         "END_DATE_TIME": "2022-11-07 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 13:30:00",
+         "END_DATE_TIME": "2022-11-14 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-14 15:30:00",
+         "END_DATE_TIME": "2022-11-14 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 13:30:00",
+         "END_DATE_TIME": "2022-11-21 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-21 15:30:00",
+         "END_DATE_TIME": "2022-11-21 17:00:00"
+      }
+   ],
+   "subject_id": "01076118",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e14\u0e39\u0e41\u0e25\u0e41\u0e1e\u0e25\u0e17\u0e1f\u0e2d\u0e23\u0e4c\u0e21\u0e23\u0e30\u0e1a\u0e1a",
+   "subject_ename": "SYSTEM PLATFORM ADMINISTRATION",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
+'COUNT'
+{
+   "teach_table_id": "89792",
+   "section": "53",
+   "teach_day": "6",
+   "teach_time": "13:30:00",
+   "teach_time2": "15:00:00",
+   "teachtime_str": "6x15:30-17:00",
+   "mexam_date": "2022-09-30",
+   "mexam_time": "13:30:00",
+   "mexam_time2": "16:30:00",
+   "exam_date": "2022-12-06",
+   "exam_time": "13:30:00",
+   "exam_time2": "16:30:00",
+   "lect_or_prac": "\u0e17",
+   "sec_pair": null,
+   "limit": "0",
+   "time_slot": [
+      {
+         "START_DATE_TIME": "2022-08-05 13:30:00",
+         "END_DATE_TIME": "2022-08-05 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-05 15:30:00",
+         "END_DATE_TIME": "2022-08-05 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-12 13:30:00",
+         "END_DATE_TIME": "2022-08-12 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-12 15:30:00",
+         "END_DATE_TIME": "2022-08-12 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-19 13:30:00",
+         "END_DATE_TIME": "2022-08-19 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-19 15:30:00",
+         "END_DATE_TIME": "2022-08-19 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-26 13:30:00",
+         "END_DATE_TIME": "2022-08-26 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-08-26 15:30:00",
+         "END_DATE_TIME": "2022-08-26 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-02 13:30:00",
+         "END_DATE_TIME": "2022-09-02 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-02 15:30:00",
+         "END_DATE_TIME": "2022-09-02 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-09 13:30:00",
+         "END_DATE_TIME": "2022-09-09 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-09 15:30:00",
+         "END_DATE_TIME": "2022-09-09 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-16 13:30:00",
+         "END_DATE_TIME": "2022-09-16 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-16 15:30:00",
+         "END_DATE_TIME": "2022-09-16 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-23 13:30:00",
+         "END_DATE_TIME": "2022-09-23 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-09-23 15:30:00",
+         "END_DATE_TIME": "2022-09-23 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-07 13:30:00",
+         "END_DATE_TIME": "2022-10-07 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-07 15:30:00",
+         "END_DATE_TIME": "2022-10-07 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-14 13:30:00",
+         "END_DATE_TIME": "2022-10-14 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-14 15:30:00",
+         "END_DATE_TIME": "2022-10-14 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-21 13:30:00",
+         "END_DATE_TIME": "2022-10-21 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-21 15:30:00",
+         "END_DATE_TIME": "2022-10-21 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-28 13:30:00",
+         "END_DATE_TIME": "2022-10-28 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-10-28 15:30:00",
+         "END_DATE_TIME": "2022-10-28 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-04 13:30:00",
+         "END_DATE_TIME": "2022-11-04 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-04 15:30:00",
+         "END_DATE_TIME": "2022-11-04 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-11 13:30:00",
+         "END_DATE_TIME": "2022-11-11 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-11 15:30:00",
+         "END_DATE_TIME": "2022-11-11 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-18 13:30:00",
+         "END_DATE_TIME": "2022-11-18 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-18 15:30:00",
+         "END_DATE_TIME": "2022-11-18 17:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-25 13:30:00",
+         "END_DATE_TIME": "2022-11-25 15:00:00"
+      },
+      {
+         "START_DATE_TIME": "2022-11-25 15:30:00",
+         "END_DATE_TIME": "2022-11-25 17:00:00"
+      }
+   ],
+   "subject_id": "01076118",
+   "subject_tname": "\u0e01\u0e32\u0e23\u0e14\u0e39\u0e41\u0e25\u0e41\u0e1e\u0e25\u0e17\u0e1f\u0e2d\u0e23\u0e4c\u0e21\u0e23\u0e30\u0e1a\u0e1a",
+   "subject_ename": "SYSTEM PLATFORM ADMINISTRATION",
+   "credit": "3",
+   "lect_hr": "3",
+   "prac_hr": "0",
+   "self_hr": "6",
+   "skip_date_time": false
+}
