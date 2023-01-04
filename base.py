@@ -2,13 +2,13 @@ import sys, warnings, os
 import numpy, random, math
 import tqdm
 import json, csv
-from typing import Any, Callable as Call, Type, TYPE_CHECKING, Iterable, Optional as Opt, Coroutine, Awaitable as Await, Concatenate
+from typing import Any, Callable as Call, Type, TYPE_CHECKING, Iter as Iter, Optional as Opt, Coroutine as Coro, Awaitable as Await, Concatenate as Concat
 from itertools import cycle, product, count, chain
 from dataclasses import dataclass, field, KW_ONLY
 from copy import copy
 from calendar import *
 from datetime import datetime, date, time
-from time import time as stime, strftime, gmtime, sleep
+from time import time as times, strftime, sleep
 
 if TYPE_CHECKING:
     from typing import TypeVar, ParamSpec
@@ -17,7 +17,7 @@ if TYPE_CHECKING:
     StrInt = str | int
 
 strptime = datetime.strptime
-TIME = gmtime()
+TODAY = datetime.today()
 
 class log:
     dashline = '-' * 100
@@ -86,7 +86,7 @@ def cls_from_module(*modules, folder=''):
                     yield obj
            
                 
-def all_neat_value(obj: Iterable): 
+def all_neat_value(obj: Iter): 
     iterater = (dict, list, tuple)
     assert obj not in iterater, f'Not iterable: {obj}'
     
