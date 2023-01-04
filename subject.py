@@ -16,7 +16,7 @@ class Subject:
         thainame: str,
         credit: StrInt,
         day: StrInt,
-        time: Iterable[period],
+        time: Iter[period],
         genre: Opt[str] = None,
         sec_pair: Opt[StrInt] = None,
         mid_date: Opt[datetime] = None,
