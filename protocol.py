@@ -2,16 +2,16 @@ from __future__ import annotations
 from base import *
 from exceptions import *
 import asyncio, aiohttp
+from _multidict import MultiDict
 from subject import *
 
 ID = 'studentID'
 KEY = 'password'
 YEAR = 'year'
 SEMESTER = 'semester'
-TMR = 'Too Many Requests'
 
 
-class CSV: # for overwrite (unusable yet)
+class CSV: # unready
     def teach_time_format(self, data):
         day_index = int(data['teach_day'])
         day = self.day[day_index]
@@ -86,24 +86,42 @@ def connection_loop(f: Call[P, Await[None]]) -> Call[P, Await[None]]:
     return _ # type: ignore 
 
 
-def str_range(s: str | Iterable):
+def str_range(s: str | Iter[str]):
+    """
+    generate str ...
+    """
     if isinstance(s, str):
         if '-' in s:
             start, end = s.split('-')
-            l = len(start)
-            assert l == len(end)
+            bit = len(start)
+            assert bit == len(end)
             for i in range(int(start), int(end)+1): 
-                yield str(i).zfill(l)
+                yield str(i).zfill(bit)
         else: yield s
     else: yield from s
+    
+    
+def id_range(
+    r: list[str], 
+    filter: Call[[str], bool] = lambda _: True
+): 
+    """
+    generate id ex. subject id ...
+    """
+    l = (*r, '001-999') if len(r) == 3 else r
+    seq = [str_range(q) for q in l]
+    for d in product(*seq):
+        id = ''.join(d)
+        if filter(id): 
+            yield id
 
 
 @dataclass
 class _BaseProtocol:
     studentID: StrInt
     password: StrInt
-    year: StrInt = TIME.tm_year + 543
-    semester: StrInt = 1 if 12 > TIME.tm_mon > 5 else 2
+    year: StrInt = TODAY.year + 543
+    semester: StrInt = 1 if 12 > TODAY.month > 5 else 2
     level: StrInt = 1
     
     _: KW_ONLY
@@ -116,19 +134,15 @@ class _BaseProtocol:
     ratelimit: int = 60
     
     def __post_init__(self):
-        self._header: Opt[dict] = None
+        self.default_header = MultiDict(self)
         self._cookie: Opt[dict] = None
         self.email = f'{self.studentID}@kmitl.ac.th'
         self.task = []
-
-    @property
-    def header(self):
-        return self._header
-    
-    @header.setter
-    def header(self, value: dict):
-        self._header = value
-        self.new_session()
+        
+    def update_header(self, **kw):
+        self.default_header.update(**kw)
+        if hasattr(self, 'session'):
+            self.session.headers.extend(**kw)
         
     @property
     def cookie(self):
@@ -140,11 +154,15 @@ class _BaseProtocol:
         self.new_session()
 
     def new_session(self):
+        """
+        "ClientSession" require to have running event loop ?
+        """
         log('New session')
+        # asyncio.get_running_loop()
         trying(self.close)
         self.session = aiohttp.ClientSession(
             base_url = self.base_url,
-            headers = self.header,
+            headers = self.default_header,
             cookies = self.cookie,
             connector = aiohttp.TCPConnector(
                 limit = self.connection_limit
@@ -153,6 +171,9 @@ class _BaseProtocol:
         )
     
     def open_session(self):
+        """
+        create new session if there is no session
+        """
         if hasattr(self, 'session'):
             if self.session.closed:
                 self.new_session()
@@ -163,13 +184,28 @@ class _BaseProtocol:
         asyncio.create_task(self.session.close())
         log('add session.close task')
     
+    def C429(self, content):
+        """
+        handle HTTP:
+        Too Many Requests
+        """
+        log()
+        
+    def C200(self, content):
+        """
+        handle HTTP:
+        OK
+        """
+        return content
+    
     @staticmethod
-    def request(f: Call[P, Await[dict | None]]) -> Call[P, Await[tuple[int, Any]]]:
+    def request(f: Call[P, Await[dict | None]]) -> Call[P, Await[Any]]:
         async def _(self: _BaseProtocol, *arg: P.args, **kw: P.kwargs):
             self.open_session()
+            f_name = f.__name__.replace('_', '')
             method: Call[
                 ..., aiohttp.client._RequestContextManager
-            ] = getattr(self.session, f.__name__.replace('_', ''))
+            ] = getattr(self.session, f_name)
 
             if dict := await f(*arg, **kw):
                 del dict['self'], dict['url']
@@ -183,9 +219,16 @@ class _BaseProtocol:
                     case 'plain':
                         content = data.decode()
                     case _:
-                        raise Wrong('Unsupport content_type')
-                    
-                return response.status, content
+                        raise Wrong(f'Unsupport content_type {type}/{subtype}: {data}')
+                
+                code = str(response.status)
+                if handle := getattr(self, f'C{code}', None):
+                    return handle(content)
+                elif code.startswith('2'):
+                    log(f':')
+                    return content
+                else:
+                    raise Wrong(f'Unknow HTTP code "{code}": {content}')                
 
         return _ # type: ignore
     
@@ -207,6 +250,10 @@ def From(url: str) -> Type[_BaseProtocol]:
     )
     
 class Simple(From('https://k8s.reg.kmitl.ac.th')):
+    """
+    Seem like this site doesn't use IP or Student ID to identify client (maybe session or cookie ?)
+    So we can avoid HTTP: 429 by create new session every ~200 requests
+    """
     dir_data = '/reg/api/'
     response_shorten = {
         'not in the course schedule': 
@@ -227,22 +274,13 @@ class Simple(From('https://k8s.reg.kmitl.ac.th')):
         self.csv
     
     
-    def selecter(self, id):        
+    def filter(self, id):        
         condition = (
             True,
             ...
         )
         if all(condition): 
             return True
-    
-    
-    def generate_id(self, r: list): 
-        l = (*r, '001-999') if len(r) == 3 else r
-        seq = [str_range(q) for q in l]
-        for d in product(*seq):
-            id = ''.join(d)
-            if self.selecter(id): 
-                yield id
 
 
     def get_occupy(self, registered):
@@ -284,21 +322,8 @@ class Simple(From('https://k8s.reg.kmitl.ac.th')):
     
     
     def check_overlap(self, subject):
-        time_period = self.time_period
-        occ = self.occupied_time.copy()
+        ...
         
-        for s in 'mexam', 'exam':
-            date = subject[s+'_date']
-            period = time_period(subject[s+'_time'])
-            l = date, period
-            exist = occ[s].pop(l, None)
-            if exist: return exist
-        
-        day = subject['teach_day']
-        period = time_period(subject['teach_time'])
-        l = day, period
-        return occ['teach'].pop(l, None)
-    
 
     def display_respone(self, data):
         def sub(subject, follow=False):
@@ -321,9 +346,9 @@ class Simple(From('https://k8s.reg.kmitl.ac.th')):
                     text = f'Open! [{count}/{limit}]'
                 
                 if follow:
-                    s = f"%-5s%-{9+len(engname)}s {text}/n" % (f'({sec})', f'__{eng_name}__')
+                    s = f"%-5s%-{9+len(engname)}s {text}/n" % (f'({sec})', f'__{engname}__')
                 else: 
-                    s = f"%-5s%-{9+len(engname)}s {text}" % (f'({sec})', f'__{eng_name}__')
+                    s = f"%-5s%-{9+len(engname)}s {text}" % (f'({sec})', f'__{engname}__')
                     
                 loglist.append(s)
                 return pair
@@ -338,7 +363,7 @@ class Simple(From('https://k8s.reg.kmitl.ac.th')):
                         break
         
         log(*loglist, t=False)
-                
+        
     
     def handle_respone(self, id, error, data):
         if error is not None:
@@ -366,7 +391,6 @@ class Simple(From('https://k8s.reg.kmitl.ac.th')):
             year = self.year,
             semester = self.semester
         )
-        code = rawdata
         try: 
             error = rawdata['error']
             infomation = rawdata['data']
@@ -448,7 +472,7 @@ class Simple(From('https://k8s.reg.kmitl.ac.th')):
     
 
     @connection_loop
-    async def look_up(self, group: asyncio.TaskGroup, l: Iterable[tuple]):
+    async def look_up(self, group: asyncio.TaskGroup, l: Iter[tuple]):
         await self.auth()
         await self.get_registered()
         
@@ -464,12 +488,12 @@ if __name__ == '__main__':
         ('01', '07', '6'),
         ('90', ('64','59','57'), '1-5'),
     ]
-        # --------- example --------- (No. run from 001 to 999)
-        # 01 07 6 xxx -> CE subject
-        # maingroup branch degree No.
-        # 
-        # 90 64 5 xxx -> gen-ed subject
-        # maingroup year group No.
+    # --------- example --------- (No. run from 001 to 999)
+    # 01 07 6 xxx -> CE subject
+    # maingroup branch degree No.
+    # 
+    # 90 64 5 xxx -> gen-ed subject
+    # maingroup year group No.
     import temp_user
     mysubject = Simple(
         temp_user.id, 
@@ -478,5 +502,3 @@ if __name__ == '__main__':
         csv=False
     )
     asyncio.run(mysubject.run())
-    aiohttp.ClientSession().get()
-    
